@@ -21,7 +21,7 @@
     left: 106px;
   }
   
-  .screen .overlap-group {
+  .screen .month_group {
     position: absolute;
     width: 83px;
     height: 51px;
@@ -31,12 +31,12 @@
   
   .screen .calendar {
     display: flex;
-    width: 83px;
-    height: 25px;
+    width: 83.12px;
+    height: 25.1px;
     align-items: center;
     justify-content: center;
     padding: 2px 8px;
-    position: absolute;
+    position: relative;
     top: 26px;
     left: 0;
     background-color: #000000;
@@ -49,7 +49,7 @@
     font-family: "Inter-Bold", Helvetica;
     font-weight: 700;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 17px;
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
@@ -72,18 +72,18 @@
   
   .screen .left_vector {
     position: absolute;
-    width: 13px;
-    height: 15px;
+    width: 13.06px;
+    height: 14.83px;
     top: 32px;
     left: 0px;
   }
   
   .screen .right_vector {
     position: absolute;
-    width: 13px;
-    height: 15px;
+    width: 13.06px;
+    height: 14.83px;
     top: 32px;
-    left: 154px;
+    right: 0;
   }
   
   .screen .view {
@@ -118,48 +118,23 @@
     left: 0;
   }
   
-  .screen .overlap-group-wrapper {
+  .screen .sentiment_1 {
     position: absolute;
     width: 31px;
     height: 36px;
     top: 0;
     left: 0;
   }
-  
-  .screen .overlap-group-2 {
-    position: relative;
-    width: 32px;
-    height: 38px;
+
+  .screen .sentiment_group {
+    position: absolute;
+    width: 31px;
+    height: 36.48px;
     top: -2px;
   }
+
   
-  .screen .group {
-    position: absolute;
-    width: 28px;
-    height: 27px;
-    top: 11px;
-    left: 0;
-    background-color: #030000;
-    border-radius: 13.78px / 13.66px;
-  }
-  
-  .screen .group-2 {
-    position: absolute;
-    width: 17px;
-    height: 11px;
-    top: 9px;
-    left: 6px;
-  }
-  
-  .screen .group-3 {
-    position: absolute;
-    width: 11px;
-    height: 17px;
-    top: 0;
-    left: 21px;
-  }
-  
-  .screen .overlap-wrapper {
+  .screen .sentiment_2 {
     position: absolute;
     width: 31px;
     height: 36px;
@@ -167,83 +142,13 @@
     left: 48px;
   }
   
-  .screen .group-4 {
-    position: absolute;
-    width: 13px;
-    height: 8px;
-    top: 21px;
-    left: 7px;
-  }
   
-  .screen .ellipse {
-    left: 0;
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    top: 0;
-    background-color: #ffffff;
-    border-radius: 1.17px / 1.16px;
-    border: 1px solid;
-  }
-  
-  .screen .ellipse-2 {
-    left: 11px;
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    top: 0;
-    background-color: #ffffff;
-    border-radius: 1.17px / 1.16px;
-    border: 1px solid;
-  }
-  
-  .screen .line {
-    position: absolute;
-    width: 7px;
-    height: 3px;
-    top: 6px;
-    left: 3px;
-  }
-  
-  .screen .div-wrapper {
+  .screen .sentiment_3 {
     position: absolute;
     width: 31px;
     height: 36px;
     top: 0;
     left: 96px;
-  }
-  
-  .screen .group-5 {
-    position: relative;
-    width: 13px;
-    height: 8px;
-    top: 11px;
-    left: 7px;
-  }
-  
-  .screen .line-2 {
-    position: absolute;
-    width: 6px;
-    height: 1px;
-    top: 7px;
-    left: 4px;
-    object-fit: cover;
-  }
-  
-  .screen .line-3 {
-    position: absolute;
-    width: 3px;
-    height: 17px;
-    top: 0;
-    left: 22px;
-  }
-  
-  .screen .vector-2 {
-    position: absolute;
-    width: 11px;
-    height: 16px;
-    top: 0;
-    left: 21px;
   }
   
   .screen .sentiment-2 {
