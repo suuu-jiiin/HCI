@@ -167,6 +167,38 @@
     left: 191px;
   }
 
+  .tutorial .tutorial_alarm {
+    width: 357px;
+    height: 21px;
+    position: absolute;
+    top:0;
+    left: 0;
+  }
+
+  .tutorial .tutorial_rectangle {
+    width: 370px;
+    height: 37px;
+    background-color: var(--fuschia-60);
+    position: relative;
+    top:0;
+    left:0;
+  }
+
+  .tutorial .tutorial_text {
+    position: absolute;
+    width: 327px;
+    height: 35px;
+    left: 8px;
+    font-family: "Manrope-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 27px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    top: 0;
+  }
+
   .tutorial .count_text_1 {
     width: 18px;
     height: 16px;
@@ -461,6 +493,18 @@
     top: 158px;
     left: 0;
   }
+
+  .tutorial .rectangle2 {
+    position: absolute;
+    width: 47px;
+    height: 72px;
+    top: 0;
+    left: 0;
+    background-color: #dedede;
+    border: 1px solid;
+    border-color: #000000;
+    transform: rotate(180deg);
+  }
   
   .tutorial .mon {
     position: absolute;
@@ -510,70 +554,11 @@
     left: 312px;
   }
 
-  .tutorial .view-2{
-    position: absolute;
-    width: 247px;
-    height: 69px;
-    top: 320px;
-    left: 118px;
-  }
-
-  .tutorial .overlap-4 {
-    position: relative;
-    width: 320px;
-    height: 69px;
-  }
-
-  .tutorial .rectangle-3 {
-    position: absolute;
-    width: 355px;
-    height: 21px;
-    top: 41;
-    left: 454px;
-    background-color: var(--fuschia-60)
-  }
-
-
-  .tutorial .polygon {
-    position: absolute;
-    width: 11px;
-    height: 12px;
-    top: 320px;
-    left: 16px;
-  }
-
-  .tutorial .p {
-    position: absolute;
-    width: 235px;
-    height: 69px;
-    top: 0;
-    left: 8px;
-    font-family: "Manrope-Bold", Helvetica;
-    font-weight: 700;
-    color: #3e3939;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  tutorial .text-wrapper-12 {
-    position: absolute;
-    width: 26px;
-    height: 21px;
-    top: 5px;
-    left: 8px;
-    font-family: "Manrope-Bold", Helvetica;
-    font-weight: 700;
-    color: #5f5f5f;
-    font-size: 10px;
-    letter-spacing: 0.70px;
-    line-height: 14px;
-  }
   .tutorial .image {
     position: absolute;
     width: 243px;
     height: 69px;
-    top: 98px;
+    top: 330px;
     left: 118px;
   }
 
@@ -583,27 +568,4 @@
     height: 33px;
     top: 370px;
     left: 312px;
-  }
-
-  .tutorial .rectangle-4 {
-    position: absolute;
-    width: 355px;
-    height: 21px;
-    top: 41px;
-    left: 255px;
-    background-color: var(--fuschia-60);
-  }
-
-  .tutorial .text-wrapper-11 {
-    position: absolute;
-    width: 58px;
-    height: 44px;
-    top: 7px;
-    left: 9px;
-    font-family: "Manrope-Bold", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 13px;
-    letter-spacing: 0;
-    line-height: normal;
   }
