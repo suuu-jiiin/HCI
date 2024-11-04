@@ -470,7 +470,7 @@
     left: 52px;
   }
   
-  .tutorial .mon-2 {
+  .tutorial .tue {
     position: absolute;
     width: 47px;
     height: 388px;
@@ -514,32 +514,31 @@
     position: absolute;
     width: 247px;
     height: 69px;
-    top: 98px;
+    top: 320px;
     left: 118px;
   }
 
   .tutorial .overlap-4 {
     position: relative;
-    width: 243px;
+    width: 320px;
     height: 69px;
   }
 
   .tutorial .rectangle-3 {
     position: absolute;
-    width: 241px;
-    height: 53px;
-    top: 0;
-    left: 0;
-    background-color: #ffd8e4;
-    border-radius: 7px;
+    width: 355px;
+    height: 21px;
+    top: 41;
+    left: 454px;
+    background-color: var(--fuschia-60)
   }
-  
+
 
   .tutorial .polygon {
     position: absolute;
     width: 11px;
     height: 12px;
-    top: 49px;
+    top: 320px;
     left: 16px;
   }
 
@@ -570,12 +569,19 @@
     letter-spacing: 0.70px;
     line-height: 14px;
   }
+  .tutorial .image {
+    position: absolute;
+    width: 243px;
+    height: 69px;
+    top: 98px;
+    left: 118px;
+  }
 
   .tutorial .arrow-right-circle {
     position: absolute;
     width: 33px;
     height: 33px;
-    top: 141px;
+    top: 370px;
     left: 312px;
   }
 
@@ -584,7 +590,7 @@
     width: 355px;
     height: 21px;
     top: 41px;
-    left: 454px;
+    left: 255px;
     background-color: var(--fuschia-60);
   }
 
