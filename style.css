@@ -75,7 +75,7 @@
     width: 13px;
     height: 15px;
     top: 32px;
-    left: 154px;
+    left: 0px;
   }
   
   .screen .right_vector {
@@ -83,7 +83,7 @@
     width: 13px;
     height: 15px;
     top: 32px;
-    left: 0;
+    left: 154px;
   }
   
   .screen .view {
