@@ -11,11 +11,13 @@
       <div class="div">
         <div class="calendar-month">
           <div class="month_group">
-            <div class="calendar"><div class="text">October</div></div>
-            <div class="year_text">2024</div>
+            <div class="calendar">
+              <div class="text" id="month-text">October</div>
+            </div>
+            <div class="year_text" id="year-text">2024</div>
         </div>
-        <img class="left_vector" src="../icon/left_vector.png" />
-        <img class="right_vector" src="../icon/right_vector.png" />
+        <img class="left_vector" src="../icon/left_vector.png" onclick="changeMonth(-1)" style="cursor: pointer;" />
+        <img class="right_vector" src="../icon/right_vector.png" onclick="changeMonth(1)" style="cursor: pointer;"/>
         </div>
         <div class="view">
           <div class="overlap">
@@ -291,5 +293,38 @@
         </div>
       </div>
     </div>
+    <script>
+      const monthNames = ["January", "February", "March", "April", "May", "June",
+                          "July", "August", "September", "October", "November", "December"];
+      
+      let currentMonth = 9; // October을 의미 (0부터 시작하는 인덱스)
+      let currentYear = 2024;
+    
+      function changeMonth(direction) {
+        currentMonth += direction;
+    
+        if (currentMonth < 0) {
+          currentMonth = 11;
+          currentYear--;
+        } else if (currentMonth > 11) {
+          currentMonth = 0;
+          currentYear++;
+        }
+    
+        updateCalendar();
+      }
+    
+      function updateCalendar() {
+        document.getElementById("month-text").textContent = monthNames[currentMonth];
+        document.getElementById("year-text").textContent = currentYear;
+    
+        // 여기에 선택한 달에 맞는 날짜를 동적으로 생성하는 코드를 추가할 수 있습니다.
+        // 지금은 월과 연도 텍스트만 업데이트되도록 설정되어 있습니다.
+      }
+    
+      // 현재 월과 연도로 초기화
+      updateCalendar();
+    </script>
+    
   </body>
 </html>
