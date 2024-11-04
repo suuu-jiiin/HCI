@@ -85,327 +85,7 @@
     top: 32px;
     left: 0;
   }
-  
-  .screen .view {
-    position: absolute;
-    width: 278px;
-    height: 87px;
-    top: 650px;
-    left: 49px;
-  }
-  
-  .screen .overlap {
-    position: relative;
-    width: 276px;
-    height: 87px;
-    background-color: #d9d9d9;
-    border-radius: 20px;
-  }
-  
-  .screen .overlap-2 {
-    position: absolute;
-    width: 225px;
-    height: 52px;
-    top: 29px;
-    left: 27px;
-  }
-  
-  .screen .sentiment {
-    position: absolute;
-    width: 222px;
-    height: 36px;
-    top: 0;
-    left: 0;
-  }
-  
-  .screen .overlap-group-wrapper {
-    position: absolute;
-    width: 31px;
-    height: 36px;
-    top: 0;
-    left: 0;
-  }
-  
-  .screen .overlap-group-2 {
-    position: relative;
-    width: 32px;
-    height: 38px;
-    top: -2px;
-  }
-  
-  .screen .group {
-    position: absolute;
-    width: 28px;
-    height: 27px;
-    top: 11px;
-    left: 0;
-    background-color: #030000;
-    border-radius: 13.78px / 13.66px;
-  }
-  
-  .screen .group-2 {
-    position: absolute;
-    width: 17px;
-    height: 11px;
-    top: 9px;
-    left: 6px;
-  }
-  
-  .screen .group-3 {
-    position: absolute;
-    width: 11px;
-    height: 17px;
-    top: 0;
-    left: 21px;
-  }
-  
-  .screen .overlap-wrapper {
-    position: absolute;
-    width: 31px;
-    height: 36px;
-    top: 0;
-    left: 48px;
-  }
-  
-  .screen .group-4 {
-    position: absolute;
-    width: 13px;
-    height: 8px;
-    top: 21px;
-    left: 7px;
-  }
-  
-  .screen .ellipse {
-    left: 0;
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    top: 0;
-    background-color: #ffffff;
-    border-radius: 1.17px / 1.16px;
-    border: 1px solid;
-  }
-  
-  .screen .ellipse-2 {
-    left: 11px;
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    top: 0;
-    background-color: #ffffff;
-    border-radius: 1.17px / 1.16px;
-    border: 1px solid;
-  }
-  
-  .screen .line {
-    position: absolute;
-    width: 7px;
-    height: 3px;
-    top: 6px;
-    left: 3px;
-  }
-  
-  .screen .div-wrapper {
-    position: absolute;
-    width: 31px;
-    height: 36px;
-    top: 0;
-    left: 96px;
-  }
-  
-  .screen .group-5 {
-    position: relative;
-    width: 13px;
-    height: 8px;
-    top: 11px;
-    left: 7px;
-  }
-  
-  .screen .line-2 {
-    position: absolute;
-    width: 6px;
-    height: 1px;
-    top: 7px;
-    left: 4px;
-    object-fit: cover;
-  }
-  
-  .screen .line-3 {
-    position: absolute;
-    width: 3px;
-    height: 17px;
-    top: 0;
-    left: 22px;
-  }
-  
-  .screen .vector-2 {
-    position: absolute;
-    width: 11px;
-    height: 16px;
-    top: 0;
-    left: 21px;
-  }
-  
-  .screen .sentiment-2 {
-    position: absolute;
-    width: 30px;
-    height: 36px;
-    top: 0;
-    left: 144px;
-  }
-  
-  .screen .group-6 {
-    position: relative;
-    width: 13px;
-    height: 8px;
-    top: 10px;
-    left: 7px;
-  }
-  
-  .screen .group-wrapper {
-    position: absolute;
-    width: 13px;
-    height: 2px;
-    top: 0;
-    left: 0;
-  }
-  
-  .screen .group-7 {
-    position: relative;
-    height: 2px;
-  }
-  
-  .screen .line-4 {
-    position: absolute;
-    width: 8px;
-    height: 2px;
-    top: 6px;
-    left: 2px;
-  }
-  
-  .screen .group-8 {
-    position: absolute;
-    width: 11px;
-    height: 17px;
-    top: 0;
-    left: 20px;
-  }
-  
-  .screen .sentiment-3 {
-    position: absolute;
-    width: 31px;
-    height: 36px;
-    top: 0;
-    left: 191px;
-  }
-  
-  .screen .group-9 {
-    position: absolute;
-    width: 14px;
-    height: 12px;
-    top: 8px;
-    left: 7px;
-  }
-  
-  .screen .count {
-    position: absolute;
-    width: 220px;
-    height: 16px;
-    top: 36px;
-    left: 5px;
-  }
-  
-  .screen .text-wrapper-2 {
-    width: 18px;
-    height: 16px;
-    top: 0;
-    left: 0;
-    position: absolute;
-    font-family: "Lato-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 10px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 12.5px;
-  }
-  
-  .screen .text-wrapper-3 {
-    width: 18px;
-    height: 16px;
-    top: 0;
-    left: 48px;
-    position: absolute;
-    font-family: "Lato-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 10px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 12.5px;
-  }
-  
-  .screen .text-wrapper-4 {
-    width: 18px;
-    height: 16px;
-    top: 0;
-    left: 96px;
-    position: absolute;
-    font-family: "Lato-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 10px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 12.5px;
-  }
-  
-  .screen .text-wrapper-5 {
-    width: 18px;
-    height: 16px;
-    top: 0;
-    left: 144px;
-    position: absolute;
-    font-family: "Lato-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 10px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 12.5px;
-  }
-  
-  .screen .text-wrapper-6 {
-    width: 18px;
-    height: 16px;
-    top: 0;
-    left: 192px;
-    position: absolute;
-    font-family: "Lato-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 10px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 12.5px;
-  }
-  
-  .screen .text-wrapper-7 {
-    position: absolute;
-    width: 75px;
-    height: 13px;
-    top: 7px;
-    left: 102px;
-    font-family: "Manrope-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 11px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
+
   .screen .music {
     position: absolute;
     width: 74px;
@@ -413,7 +93,7 @@
     top: 43px;
     left: 150px;
   }
-  
+
   .screen .calendar-week {
     position: absolute;
     width: 361px;
@@ -432,15 +112,15 @@
     background-color: #ffffff;
   }
   
-  .screen .div-wrapper-2 {
+  .screen .div-wrapper {
     position: relative;
     flex: 1;
     flex-grow: 1;
     height: 24px;
     background-color: #ffffff;
   }
-  
-  .screen .text-wrapper-8 {
+
+  .screen .text-wrapper-2 {
     position: absolute;
     height: 15px;
     top: 3px;
@@ -455,7 +135,7 @@
     line-height: 15px;
     white-space: nowrap;
   }
-  
+
   .screen .sun {
     position: absolute;
     height: 15px;
@@ -520,7 +200,7 @@
     left: 0;
   }
   
-  .screen .group-10 {
+  .screen .group {
     position: absolute;
     width: 49px;
     height: 72px;
@@ -528,7 +208,7 @@
     left: 0;
   }
   
-  .screen .overlap-group-3 {
+  .screen .overlap-group-2 {
     position: relative;
     width: 47px;
     height: 72px;
@@ -546,7 +226,7 @@
     transform: rotate(180deg);
   }
   
-  .screen .text-wrapper-9 {
+  .screen .text-wrapper-3 {
     position: absolute;
     width: 17px;
     height: 11px;
@@ -561,24 +241,24 @@
     line-height: 12.5px;
     white-space: nowrap;
   }
-  
-  .screen .group-11 {
+
+  .screen .overlap-wrapper {
     position: absolute;
     width: 49px;
     height: 72px;
     top: 0;
     left: 0;
   }
-  
-  .screen .group-12 {
+
+  .screen .overlap-group-wrapper {
     position: absolute;
     width: 49px;
     height: 72px;
     top: 237px;
     left: 0;
   }
-  
-  .screen .text-wrapper-10 {
+
+  .screen .text-wrapper-4 {
     width: 17px;
     height: 11px;
     top: 3px;
@@ -594,7 +274,7 @@
     line-height: 12.5px;
   }
   
-  .screen .group-13 {
+  .screen .group-2 {
     position: absolute;
     width: 49px;
     height: 72px;
@@ -602,7 +282,7 @@
     left: 0;
   }
   
-  .screen .group-14 {
+  .screen .group-3 {
     position: absolute;
     width: 49px;
     height: 72px;
@@ -666,14 +346,14 @@
     left: 283px;
   }
   
-  .screen .overlap-3 {
+  .screen .overlap {
     position: relative;
     width: 70px;
     height: 46px;
     background-color: var(--fuschia-60);
   }
   
-  .screen .text-wrapper-11 {
+  .screen .text-wrapper-5 {
     position: absolute;
     width: 58px;
     height: 44px;
@@ -686,4 +366,282 @@
     letter-spacing: 0;
     line-height: normal;
   }
+
+  .screen .group-4 {
+    position: absolute;
+    width: 288px;
+    height: 87px;
+    top: 650px;
+    left: 49px;
+  }
+
+  .screen .overlap-2 {
+    position: relative;
+    width: 276px;
+    height: 87px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+  }
+
+  .screen .overlap-3 {
+    position: absolute;
+    width: 31px;
+    height: 52px;
+    top: 29px;
+    left: 27px;
+  }
+
+  .screen .text-wrapper-6 {
+    width: 18px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    font-family: "Lato-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 12.5px;
+  }
+
+  .screen .sentiment {
+    position: absolute;
+    width: 31px;
+    height: 36px;
+    top: 0;
+    left: 0;
+  }
+
+  .screen .overlap-group3 {
+    position: relative;
+    width: 32px;
+    height: 38px;
+    top: -2px;
+  }
+
+  .screen .ellipse {
+    position: absolute;
+    width: 28px;
+    height: 27px;
+    top: 11px;
+    left: 0;
+    background-color: #030000;
+    border-radius: 13.78px / 13.66px;
+  }
+
+  .screen .line {
+    position: absolute;
+    width: 5px;
+    height: 3px;
+    top: 20px;
+    left: 17px;
+  }
+
+  .screen .line-2 {
+    position: absolute;
+    width: 5px;
+    height: 3px;
+    top: 20px;
+    left: 6px;
+  }
+
+  .screen .polygon {
+    top: 24px;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 11px;
+  }
+  
+  .screen .line-3 {
+    position: absolute;
+    width: 3px;
+    height: 17px;
+    top: 0;
+    left: 22px;
+  }
+
+  .screen .vector-2 {
+    position: absolute;
+    width: 11px;
+    height: 16px;
+    top: 0;
+    left: 21px;
+  }
+
+  .screen .overlap-4{
+    position: absolute;
+    width: 31px;
+    height: 52px;
+    top: 29px;
+    left: 75px;
+  }
+
+  .screen .ellipse-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 21px;
+    left: 7px;
+    background-color: #ffffff;
+    border-radius: 1.17px / 1.16px;
+    border: 1px solid;
+  }
+
+  .screen .ellipse-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 21px;
+    left: 18px;
+    background-color: #ffffff;
+    border-radius: 1.17px / 1.16px;
+    border: 1px solid;
+  }
+
+  .screen .line-4 {
+    position: absolute;
+    width: 7px;
+    height: 3px;
+    top: 26px;
+    left: 10px;
+  }
+
+  .screen .overlap-5{
+    position: absolute;
+    width: 6px;
+    height: 1px;
+    top: 29px;
+    left: 123px;
+  }
+
+  .screen .line-5 {
+    position: absolute;
+    width: 6px;
+    height: 1px;
+    top: 28px;
+    left: 11px;
+    object-fit: cover;
+  }
+
+  .screen .ellipse-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 22px;
+    left: 18px;
+    background-color: #ffffff;
+    border-radius: 1.17px / 1.16px;
+    border: 1px solid;
+  }
+
+  .screen .ellipse-5 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 22px;
+    left: 7px;
+    background-color: #ffffff;
+    border-radius: 1.17px / 1.16px;
+    border: 1px solid;
+  }
+
+  .screen .overlap-6 {
+    position: absolute;
+    width: 30px;
+    height: 52px;
+    top: 29px;
+    left: 171px;
+  }
+
+  .screen .sentiment-2 {
+    position: absolute;
+    width: 30px;
+    height: 36px;
+    top: 0;
+    left: 0px;
+  }
+
+  .screen .line-6 {
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    top: 27px;
+    left: 9px;
+  }
+
+  .screen .line-7 {
+    position: absolute;
+    width: 3px;
+    height: 17px;
+    top: 0;
+    left: 20px;
+  }
+
+  .screen .overlap-7 {
+    position: absolute;
+    width: 31px;
+    height: 52px;
+    top: 29px;
+    left: 218px;
+  }  
+
+  .screen .text-wrapper-7 {
+    width: 18px;
+    height: 16px;
+    top: 36px;
+    left: 6px;
+    position: absolute;
+    font-family: "Lato-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 12.5px;
+  }
+
+  .screen .polygon-2 {
+    top: 25px;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 11px;
+  }
+
+  .screen .line-8 {
+    position: absolute;
+    width: 5px;
+    height: 3px;
+    top: 19px;
+    left: 7px;
+  }
+
+  .screen .line-9 {
+    position: absolute;
+    width: 5px;
+    height: 3px;
+    top: 19px;
+    left: 16px;
+  }
+
+  .screen .text-wrapper-8 {
+    position: absolute;
+    width: 75px;
+    height: 13px;
+    top: 7px;
+    left: 102px;
+    font-family: "Manrope-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  
   
