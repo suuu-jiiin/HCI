@@ -129,7 +129,7 @@
   .screen .sentiment_group {
     position: absolute;
     width: 31px;
-    height: 36.48px;
+    height: 37px;
     top: -2px;
   }
 
@@ -137,7 +137,7 @@
   .screen .sentiment_2 {
     position: absolute;
     width: 31px;
-    height: 36px;
+    height: 37px;
     top: 0;
     left: 48px;
   }
@@ -146,70 +146,25 @@
   .screen .sentiment_3 {
     position: absolute;
     width: 31px;
-    height: 36px;
+    height: 37px;
     top: 0;
     left: 96px;
   }
   
-  .screen .sentiment-2 {
+  .screen .sentiment_4 {
     position: absolute;
     width: 30px;
-    height: 36px;
+    height: 37px;
     top: 0;
     left: 144px;
   }
   
-  .screen .group-6 {
-    position: relative;
-    width: 13px;
-    height: 8px;
-    top: 10px;
-    left: 7px;
-  }
-  
-  .screen .group-wrapper {
-    position: absolute;
-    width: 13px;
-    height: 2px;
-    top: 0;
-    left: 0;
-  }
-  
-  .screen .group-7 {
-    position: relative;
-    height: 2px;
-  }
-  
-  .screen .line-4 {
-    position: absolute;
-    width: 8px;
-    height: 2px;
-    top: 6px;
-    left: 2px;
-  }
-  
-  .screen .group-8 {
-    position: absolute;
-    width: 11px;
-    height: 17px;
-    top: 0;
-    left: 20px;
-  }
-  
-  .screen .sentiment-3 {
+  .screen .sentiment_5 {
     position: absolute;
     width: 31px;
-    height: 36px;
+    height: 37px;
     top: 0;
     left: 191px;
-  }
-  
-  .screen .group-9 {
-    position: absolute;
-    width: 14px;
-    height: 12px;
-    top: 8px;
-    left: 7px;
   }
   
   .screen .count {
