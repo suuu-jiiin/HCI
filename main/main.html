@@ -14,10 +14,11 @@
             <div class="calendar">
               <div class="month_text" id="month-text">October</div>
               <div class="year_text" id="year-text">2024</div>
+              <div class="dates" id="dates"></div>
             </div>
         </div>
-        <img class="left_vector" src="../icon/left_vector.png" onclick="changeMonth(-1)" style="cursor: pointer;" />
-        <img class="right_vector" src="../icon/right_vector.png" onclick="changeMonth(1)" style="cursor: pointer;"/>
+        <img class="left_vector" id="prev" src="../icon/left_vector.png"  style="cursor: pointer;" />
+        <img class="right_vector" id="next" src="../icon/right_vector.png" style="cursor: pointer;"/>
         </div>
         <div class="view">
           <div class="overlap">
@@ -53,239 +54,239 @@
           <div class="days-of-week">
             <div class="div-wrapper-2"><div class="text-wrapper-8">Sun</div></div>
             <div class="div-wrapper-2"><div class="text-wrapper-8">Mon</div></div>
-            <div class="div-wrapper-2"><div class="sun">Tue</div></div>
+            <div class="div-wrapper-2"><div class="text-wrapper-8">Tue</div></div>
             <div class="div-wrapper-2"><div class="text-wrapper-8">Wed</div></div>
             <div class="div-wrapper-2"><div class="text-wrapper-8">Thu</div></div>
-            <div class="div-wrapper-2"><div class="sun-2">Fri</div></div>
-            <div class="div-wrapper-2"><div class="sun-3">Sat</div></div>
+            <div class="div-wrapper-2"><div class="text-wrapper-8">Fri</div></div>
+            <div class="div-wrapper-2"><div class="text-wrapper-8">Sat</div></div>
           </div>
         </div>
-        <div class="calendar-date">
-          <div class="sun-4">
-            <div class="group-10">
+        <!--<div class="calendar-date">
+          <div class="sun">
+            <div class="first">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">6</div>
+                <div class="text-wrapper-9" data-day="0">29</div>
               </div>
             </div>
-            <div class="group-11">
+            <div class="second">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">29</div>
+                <div class="text-wrapper-9" data-day="0">6</div>
               </div>
             </div>
-            <div class="group-12">
+            <div class="fourth">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-10">20</div>
+                <div class="text-wrapper-9" data-day="0">20</div>
               </div>
             </div>
-            <div class="group-13">
+            <div class="fifth">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">27</div>
+                <div class="text-wrapper-9" data-day="0">27</div>
               </div>
             </div>
-            <div class="group-14">
+            <div class="third">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">13</div>
+                <div class="text-wrapper-9" data-day="0">13</div>
               </div>
             </div>
           </div>
           <div class="mon">
-            <div class="group-10">
+            <div class="second">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">7</div>
+                <div class="text-wrapper-9" data-day="1">7</div>
               </div>
             </div>
-            <div class="group-11">
+            <div class="first">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">30</div>
+                <div class="text-wrapper-9" data-day="1">30</div>
               </div>
             </div>
-            <div class="group-12">
+            <div class="fourth">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-10">21</div>
+                <div class="text-wrapper-9" data-day="1">21</div>
               </div>
             </div>
-            <div class="group-13">
+            <div class="fifth">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">28</div>
+                <div class="text-wrapper-9" data-day="1">28</div>
               </div>
             </div>
-            <div class="group-14">
+            <div class="third">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">14</div>
+                <div class="text-wrapper-9" data-day="1">14</div>
               </div>
             </div>
           </div>
-          <div class="mon-2">
-            <div class="group-10">
+          <div class="tue">
+            <div class="second">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">8</div>
+                <div class="text-wrapper-9" data-day="2">8</div>
               </div>
             </div>
-            <div class="group-11">
+            <div class="first">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">1</div>
+                <div class="text-wrapper-9" data-day="2">1</div>
               </div>
             </div>
-            <div class="group-12">
+            <div class="fourth">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-10">22</div>
+                <div class="text-wrapper-9" data-day="2">22</div>
               </div>
             </div>
-            <div class="group-13">
+            <div class="fifth">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">29</div>
+                <div class="text-wrapper-9" data-day="2">29</div>
               </div>
             </div>
-            <div class="group-14">
+            <div class="third">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">15</div>
+                <div class="text-wrapper-9" data-day="2">15</div>
               </div>
             </div>
           </div>
           <div class="wed">
-            <div class="group-10">
+            <div class="second">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">9</div>
+                <div class="text-wrapper-9" data-day="3">9</div>
               </div>
             </div>
-            <div class="group-11">
+            <div class="first">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">2</div>
+                <div class="text-wrapper-9" data-day="3">2</div>
               </div>
             </div>
-            <div class="group-12">
+            <div class="fourth">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-10">23</div>
+                <div class="text-wrapper-9" data-day="3">23</div>
               </div>
             </div>
-            <div class="group-13">
+            <div class="fifth">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">30</div>
+                <div class="text-wrapper-9" data-day="3">30</div>
               </div>
             </div>
-            <div class="group-14">
+            <div class="third">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">16</div>
+                <div class="text-wrapper-9" data-day="3">16</div>
               </div>
             </div>
           </div>
           <div class="thu">
-            <div class="group-10">
+            <div class="second">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">10</div>
+                <div class="text-wrapper-9" data-day="4">10</div>
               </div>
             </div>
-            <div class="group-11">
+            <div class="first">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">3</div>
+                <div class="text-wrapper-9" data-day="4">3</div>
               </div>
             </div>
-            <div class="group-12">
+            <div class="fourth">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-10">24</div>
+                <div class="text-wrapper-9" data-day="4">24</div>
               </div>
             </div>
-            <div class="group-13">
+            <div class="fifth">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">31</div>
+                <div class="text-wrapper-9" data-day="4">31</div>
               </div>
             </div>
-            <div class="group-14">
+            <div class="third">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">17</div>
+                <div class="text-wrapper-9" data-day="4">17</div>
               </div>
             </div>
           </div>
           <div class="fri">
-            <div class="group-10">
+            <div class="second">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">11</div>
+                <div class="text-wrapper-9" data-day="5">11</div>
               </div>
             </div>
-            <div class="group-11">
+            <div class="first">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">4</div>
+                <div class="text-wrapper-9" data-day="5">4</div>
               </div>
             </div>
-            <div class="group-12">
+            <div class="fourth">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-10">25</div>
+                <div class="text-wrapper-9" data-day="5">25</div>
               </div>
             </div>
-            <div class="group-13">
+            <div class="fifth">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">1</div>
+                <div class="text-wrapper-9" data-day="5">1</div>
               </div>
             </div>
-            <div class="group-14">
+            <div class="third">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">18</div>
+                <div class="text-wrapper-9" data-day="5">18</div>
               </div>
             </div>
           </div>
           <div class="sat">
-            <div class="group-10">
+            <div class="second">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">12</div>
+                <div class="text-wrapper-9" data-day="6">12</div>
               </div>
             </div>
-            <div class="group-11">
+            <div class="first">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">5</div>
+                <div class="text-wrapper-9" data-day="6">5</div>
               </div>
             </div>
-            <div class="group-12">
+            <div class="fourth">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-10">26</div>
+                <div class="text-wrapper-9" data-day="6">26</div>
               </div>
             </div>
-            <div class="group-13">
+            <div class="fifth">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">2</div>
+                <div class="text-wrapper-9" data-day="6">2</div>
               </div>
             </div>
-            <div class="group-14">
+            <div class="third">
               <div class="overlap-group-3">
                 <div class="rectangle"></div>
-                <div class="text-wrapper-9">19</div>
+                <div class="text-wrapper-9" data-day="6">19</div>
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="tutorial">
             <div class="tutorial_rectangle" onclick="location.href='../tutorial/tutorial.html'" style="cursor: pointer;">
                 <div class="text-wrapper-11">Tutorial 바로 가기</div>
@@ -293,16 +294,27 @@
         </div>
       </div>
     </div>
+    
     <script>
       const monthNames = ["January", "February", "March", "April", "May", "June",
                           "July", "August", "September", "October", "November", "December"];
       
-      let currentMonth = 9; // October을 의미 (0부터 시작하는 인덱스)
-      let currentYear = 2024;
+      let currentMonth = new Date().getMonth();  // 현재 월로 초기화 (0-11)
+      let currentYear = new Date().getFullYear();
+    
+      document.addEventListener("DOMContentLoaded", () => {
+        // 이전/다음 버튼에 대한 이벤트 리스너 설정
+        document.getElementById("prev").addEventListener("click", () => changeMonth(-1));
+        document.getElementById("next").addEventListener("click", () => changeMonth(1));
+        
+        // 초기 달력 설정
+        updateCalendar();
+      });
     
       function changeMonth(direction) {
         currentMonth += direction;
     
+        // 월 단위가 넘어가는 경우 연도 변경
         if (currentMonth < 0) {
           currentMonth = 11;
           currentYear--;
@@ -315,16 +327,105 @@
       }
     
       function updateCalendar() {
+        // 월과 연도 업데이트
         document.getElementById("month-text").textContent = monthNames[currentMonth];
         document.getElementById("year-text").textContent = currentYear;
-    
-        // 여기에 선택한 달에 맞는 날짜를 동적으로 생성하는 코드를 추가할 수 있습니다.
-        // 지금은 월과 연도 텍스트만 업데이트되도록 설정되어 있습니다.
+        
+        // 날짜 업데이트
+        generateDates(currentYear, currentMonth);
       }
     
-      // 현재 월과 연도로 초기화
-      updateCalendar();
-    </script>
+      function generateDates(year, month) {
+        const datesContainer = document.getElementById("dates");
+        datesContainer.innerHTML = "";  // 기존 날짜 지우기
+    
+        // calendar-date 클래스를 가진 div 생성
+        const calendarDateContainer = document.createElement("div");
+        calendarDateContainer.classList.add("calendar-date");
+    
+        // 해당 월의 첫 번째 날과 마지막 날 구하기
+        const firstDay = new Date(year, month, 1);
+        const lastDay = new Date(year, month + 1, 0);
+        const daysInMonth = lastDay.getDate();
+    
+        // 첫 번째 날의 요일 계산
+        const startDay = firstDay.getDay();
+        const totalDays = daysInMonth + startDay;
+    
+        // 주 단위로 나누어 날짜를 출력
+        for (let week = 0; week < Math.ceil(totalDays / 7); week++) {
+            const weekContainer = document.createElement("div");
+            // week 값에 따라 클래스 이름을 설정
+            switch (week) {
+              case 0:
+                  weekContainer.classList.add("first");
+                  break;
+              case 1:
+                  weekContainer.classList.add("second");
+                  break;
+              case 2:
+                  weekContainer.classList.add("third");
+                  break;
+              case 3:
+                  weekContainer.classList.add("fourth");
+                  break;
+              case 4:
+                  weekContainer.classList.add("fifth");
+                  break;
+              default:
+                  break;
+                }
+            
+            // 각 주의 날짜 추가
+            for (let dayIndex = 0; dayIndex < 7; dayIndex++) {
+                const day = week * 7 + dayIndex - startDay + 1;
+                const dateCell = document.createElement("div");
+    
+                // 요일에 맞는 클래스 설정
+                let dayClass;
+                const dayOfWeek = new Date(year, month, day).getDay();
+                switch (dayOfWeek) {
+                    case 0: dayClass = "sun"; break;
+                    case 1: dayClass = "mon"; break;
+                    case 2: dayClass = "tue"; break;
+                    case 3: dayClass = "wed"; break;
+                    case 4: dayClass = "thu"; break;
+                    case 5: dayClass = "fri"; break;
+                    case 6: dayClass = "sat"; break;
+                }
+    
+                // 요일 클래스를 div에 추가
+                dateCell.classList.add(dayClass);
+    
+                // overlap-group-3 및 rectangle 구조 생성
+                const overlapGroup = document.createElement("div");
+                overlapGroup.classList.add("overlap-group-3");
+                
+                const rectangle = document.createElement("div");
+                rectangle.classList.add("rectangle");
+    
+                // 날짜를 표시할 텍스트 요소 추가
+                const textWrapper = document.createElement("div");
+                textWrapper.classList.add("text-wrapper-9");
+                textWrapper.textContent = day >= 1 && day <= daysInMonth ? day : ""; // 유효한 날짜만 표시
+    
+                // 구조에 추가
+                rectangle.appendChild(textWrapper);
+                overlapGroup.appendChild(rectangle);
+                dateCell.appendChild(overlapGroup);
+                weekContainer.appendChild(dateCell);
+            }
+    
+            // 주를 calendar-date div에 추가
+            calendarDateContainer.appendChild(weekContainer);
+        }
+    
+        // 모든 주를 담은 calendar-date div를 전체 날짜 컨테이너에 추가
+        datesContainer.appendChild(calendarDateContainer);
+    }
+    
+    </script>  
+      
     
   </body>
 </html>
