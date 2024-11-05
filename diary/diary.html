@@ -18,29 +18,62 @@
                 <div class="text-wrapper-4">일</div>
                 <div class="text-wrapper-5">쇼핑</div>
               </div>
+              
               <div class="view-2">
-                <img class="image" src="../icon/휴식.png" />
-                <img class="img" src="../icon/운동.png" />
-                <img class="image-2" src="../icon/공부.png" />
-                <img class="image-3" src="../icon/일.png" />
-                <img class="image-4" src="../icon/쇼핑.png" />
+                <label for="rest">
+                    <input type="checkbox" name="rating" class="activity" id="rest" value="rest" />
+                    <img class="image" src="../icon/휴식.png" />
+                </label>
+                <label for="health">
+                    <input type="checkbox" name="rating" class="activity" id="health" value="health" />
+                    <img class="img" src="../icon/운동.png" />
+                </label>
+                <label for="study">
+                    <input type="checkbox" name="rating" class="activity" id="study" value="study" />
+                    <img class="image-2" src="../icon/공부.png" />
+                </label>
+                <label for="work">
+                    <input type="checkbox" name="rating" class="activity" id="work" value="work" />
+                    <img class="image-3" src="../icon/일.png" />
+                </label>
+                <label for="shopping">
+                    <input type="checkbox" name="rating" class="activity" id="shopping" value="shopping" />
+                    <img class="image-4" src="../icon/쇼핑.png" />
+                </label>
               </div>
             </div>
             <div class="overlap-group-wrapper">
-              <div class="overlap-group"><div class="text-wrapper-6">오늘의 활동</div></div>
+              <div class="overlap-group">
+                <div class="text-wrapper-6">오늘의 활동</div>
+              </div>
             </div>
           </div>
           <div class="view-3">
             <div class="overlap-group-wrapper">
-              <div class="overlap-group"><div class="text-wrapper-6">오늘의 날씨</div></div>
+              <div class="overlap-group">
+                <div class="text-wrapper-6">오늘의 날씨</div>
+              </div>
             </div>
             <div class="div-3">
               <div class="element">
                 <div class="view-4">
-                  <img class="image-5" src="../icon/맑음.png" />
-                  <img class="image-6" src="../icon/흐림.png" />
-                  <img class="image-7" src="../icon/비.png" />
-                  <img class="image-8" src="../icon/눈.png" />
+                    <label for="sunny">
+                        <input type="checkbox" name="weather" class="activity" id="sunny" value="sunny" />
+                        <img class="image-5" src="../icon/맑음.png" />
+                    </label>
+                    <label for="흐림">
+                        <input type="checkbox" name="weather" class="activity" id="흐림" value="흐림" />
+                        <img class="image-6" src="../icon/흐림.png" />
+                    </label>
+                    <label for="비">
+                        <input type="checkbox" name="weather" class="activity" id="비" value="비" />
+                        <img class="image-7" src="../icon/비.png" />
+                    </label>
+                    <label for="눈">
+                        <input type="checkbox" name="weather" class="activity" id="눈" value="눈" />
+                        <img class="image-8" src="../icon/눈.png" />
+                    </label>
+                  
                 </div>
                 <div class="view-5">
                   <div class="text-wrapper-7">흐림</div>
@@ -57,35 +90,72 @@
                   <div class="text-wrapper-10">추움</div>
                 </div>
                 <div class="view-4">
-                  <img class="image-9" src="../icon/폭풍.png" />
-                  <img class="image-10" src="../icon/바람.png" />
-                  <img class="image-11" src="../icon/더움.png" />
-                  <img class="image-12" src="../icon/추움.png" />
+                    <label for="폭풍">
+                        <input type="checkbox" name="weather" class="activity" id="폭풍" value="폭풍" />
+                        <img class="image-9" src="../icon/폭풍.png" />
+                    </label>
+                    <label for="바람">
+                        <input type="checkbox" name="weather" class="activity" id="바람" value="바람" />
+                        <img class="image-10" src="../icon/바람.png" />
+                    </label>
+                    <label for="더움">
+                        <input type="checkbox" name="weather" class="activity" id="더움" value="더움" />
+                        <img class="image-11" src="../icon/더움.png" />
+                    </label>
+                    <label for="추움">
+                        <input type="checkbox" name="weather" class="activity" id="추움" value="추움" />
+                        <img class="image-12" src="../icon/추움.png" />
+                    </label>
                 </div>
               </div>
             </div>
           </div>
           <div class="view-7">
-            <div class="overlap-2"><div class="text-wrapper-11">내용을 입력해주세요</div></div>
+            <div class="overlap-2">
+              <div class="text-wrapper-11">내용을 입력해주세요</div>
+            </div>
             <div class="view-8">
-              <div class="overlap-group-2"><div class="text-wrapper-6">오늘의 일기</div></div>
+              <div class="overlap-group-2">
+                <div class="text-wrapper-6">오늘의 일기</div>
+              </div>
             </div>
           </div>
         </div>
         <div class="overlap-wrapper">
           <div class="overlap-3">
-            <div class="text-wrapper-12">
-              완&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 료
-            </div>
+            <div class="text-wrapper-12">완&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 료</div>
           </div>
         </div>
         <div class="view-9">
-            <div class="text-wrapper-13">10월 1일 (화)</div>
-            <div class="rectangle-2"></div>
-            <img class="image-13" src="../icon/뒤로가기 버튼.png" />
-          </div>
+          <!-- <div class="text-wrapper-13">10월 1일 (화)</div> -->
+          <div class="text-wrapper-13"></div>
+          <img class="image-13" src="../icon/뒤로가기 버튼.png" onclick="location.href='../main/main.html?year=' + new URLSearchParams(window.location.search).get('year')  + '&month=' + new URLSearchParams(window.location.search).get('month') + '&day=' + new URLSearchParams(window.location.search).get('day')" style="cursor: pointer;" />
+          <div class="rectangle-2"></div>
         </div>
       </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const params = new URLSearchParams(window.location.search);
+        const month = params.get("month");
+        const day = params.get("day");
+        let dayOfWeek = params.get("dayofweek");
+        let dayNames = ["일", "월", "화", "수", "목", "금", "토"];
+        dayOfWeek = dayNames[dayOfWeek];
+    
+        if (month && day && dayOfWeek) {
+            const dateText = `${month}월 ${day}일 (${dayOfWeek})`;
+            const view9Element = document.querySelector(".view-9 .text-wrapper-13");
+            if (view9Element) {
+              view9Element.textContent = dateText;
+            } else {
+              console.error("text-wrapper-13 not found");
+            }
+          } else {
+            console.error("Date parameters are missing in the URL");
+          }
+        });
+    </script>
   </body>
 </html>

@@ -49,7 +49,7 @@
             <div class="text-wrapper-7">이달의 음표들🎵</div>
           </div>
         </div>
-        <img class="music" src="../icon/music.png" />
+        <img class="music" src="../icon/music.png" onclick="location.href='../main/main.html'" style="cursor: pointer;"/>
         <div class="calendar-week">
           <div class="days-of-week">
             <div class="div-wrapper-2"><div class="text-wrapper-8">Sun</div></div>
@@ -72,9 +72,30 @@
     <script>
       const monthNames = ["January", "February", "March", "April", "May", "June",
                           "July", "August", "September", "October", "November", "December"];
+
+      function getParams(){
+          var url = window.location.search.replace('?','');
+          var params = {};
+          var urlArray = url.split('&');
       
+          for(var i in urlArray)
+          {
+            var param = urlArray[i].split('=');
+            params[param[0]] = param[1]; 
+          }
+          return params;
+      }
+
+      let params = getParams();
+
       let currentMonth = new Date().getMonth();  // 현재 월로 초기화 (0-11)
       let currentYear = new Date().getFullYear();
+
+      if(params['year'] !== undefined && params['month'] !== undefined && params['day'] !== undefined) {
+        let date = new Date(`${params['year']}-${params['month']}-${params['day']}`);
+        currentYear = date.getFullYear();
+        currentMonth = date.getMonth();
+      }
     
       document.addEventListener("DOMContentLoaded", () => {
         // 이전/다음 버튼에 대한 이벤트 리스너 설정
@@ -121,8 +142,6 @@
         const firstDay = new Date(year, month, 1);
         const lastDay = new Date(year, month + 1, 0);
         const daysInMonth = lastDay.getDate();
-    
-        // 첫 번째 날의 요일 계산
         const startDay = firstDay.getDay();
         const totalDays = daysInMonth + startDay;
     
@@ -182,6 +201,14 @@
                 const textWrapper = document.createElement("div");
                 textWrapper.classList.add("text-wrapper-9");
                 textWrapper.textContent = day >= 1 && day <= daysInMonth ? day : ""; // 유효한 날짜만 표시
+
+                if (day >= 1 && day <= daysInMonth) {
+                  dateCell.style.cursor = "pointer";
+                  // 클릭 이벤트 추가
+                  dateCell.addEventListener("click", () => {
+                      window.location.href = `../diary/diary.html?year=${year}&month=${month + 1}&day=${day}&dayofweek=${dayOfWeek}`;
+                  });
+              }
     
                 // 구조에 추가
                 rectangle.appendChild(textWrapper);
