@@ -127,10 +127,10 @@
   
 .tutorial_4 .text-wrapper-3 {
     position: absolute;
-    width: 71px;
+    width: 80px;
     height: 20px;
     top: 9px;
-    left: 10px;
+    left: 5px;
     font-family: "Manrope-Bold", Helvetica;
     font-weight: 700;
     color: #ffffff;
@@ -422,7 +422,7 @@
     position: absolute;
     width: 235px;
     height: 62px;
-    top: 0;
+    top: 16px;
     left: 7px;
     font-family: "Manrope-Bold", Helvetica;
     font-weight: 700;
