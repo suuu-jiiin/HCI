@@ -49,7 +49,7 @@
             <div class="text-wrapper-7">이달의 음표들🎵</div>
           </div>
         </div>
-        <img class="music" src="../icon/music.png" />
+        <img class="music" src="../icon/music.png" onclick="location.href='../main/main.html'" style="cursor: pointer;"/>
         <div class="calendar-week">
           <div class="days-of-week">
             <div class="div-wrapper-2"><div class="text-wrapper-8">Sun</div></div>
@@ -72,9 +72,30 @@
     <script>
       const monthNames = ["January", "February", "March", "April", "May", "June",
                           "July", "August", "September", "October", "November", "December"];
+
+      function getParams(){
+          var url = window.location.search.replace('?','');
+          var params = {};
+          var urlArray = url.split('&');
       
+          for(var i in urlArray)
+          {
+            var param = urlArray[i].split('=');
+            params[param[0]] = param[1]; 
+          }
+          return params;
+      }
+
+      let params = getParams();
+
       let currentMonth = new Date().getMonth();  // 현재 월로 초기화 (0-11)
       let currentYear = new Date().getFullYear();
+
+      if(params['year'] !== undefined && params['month'] !== undefined && params['day'] !== undefined) {
+        let date = new Date(`${params['year']}-${params['month']}-${params['day']}`);
+        currentYear = date.getFullYear();
+        currentMonth = date.getMonth();
+      }
     
       document.addEventListener("DOMContentLoaded", () => {
         // 이전/다음 버튼에 대한 이벤트 리스너 설정
