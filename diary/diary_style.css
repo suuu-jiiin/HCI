@@ -8,7 +8,7 @@
   
   .div-wrapper .div {
     background-color: #f2f2f2;
-    overflow: hidden;
+    overflow-x: hidden;
     width: 375px;
     height: 812px;
     position: relative;
@@ -18,13 +18,16 @@
     display: flex;
     flex-direction: column;
     width: 390px;
-    height: 759px;
+    height: 800px;
     align-items: flex-end;
     gap: 50px;
     padding: 0px 7px;
     position: absolute;
     top: 123px;
     left: -31px;
+    max-height: 759px; /*Set the maximum height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /*Prevents horizontal scrolling */
   }
   
   .div-wrapper .view {
@@ -453,8 +456,8 @@
     position: fixed;
     width: 377px;
     height: 75px;
-    top: 759px;
-    left: 0;
+    top: 650px;
+    left:400px;
   }
   
   .div-wrapper .overlap-3 {
