@@ -43,7 +43,7 @@
     border-radius: 4px;
   }
   
-  .screen .text {
+  .screen .month_text {
     position: relative;
     width: fit-content;
     font-family: "Inter-Bold", Helvetica;
@@ -59,7 +59,7 @@
     position: absolute;
     width: 59px;
     height: 27px;
-    top: 0;
+    top: -30px;
     left: 11px;
     font-family: "Inter-Regular", Helvetica;
     font-weight: 400;
