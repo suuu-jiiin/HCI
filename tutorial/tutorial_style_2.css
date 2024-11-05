@@ -77,10 +77,14 @@
 }
 
 .tutorial_2 .text-wrapper-2 {
+<<<<<<< HEAD
   width: 71px;
+=======
+  width: 80px;
+>>>>>>> eed52eadb846e0766264643ddca4b5d3278f041b
   height: 20px;
   top: 9px;
-  left: 10px;
+  left: 5px;
   color: #ffffff;
   font-size: 14px;
   letter-spacing: 0;
@@ -554,9 +558,15 @@
 }
 
 .tutorial_2 .overlap-5 {
+<<<<<<< HEAD
   position: relative;
+=======
+  position: absolute;
+>>>>>>> eed52eadb846e0766264643ddca4b5d3278f041b
   width: 355px;
   height: 21px;
+  top: 50px; 
+  left: 575px;
   background-color: var(--fuschia-60);
 }
 
@@ -572,4 +582,12 @@
   line-height: normal;
   position: absolute;
   top: 0;
+}
+
+.tutorial_2 .arrow-right-circle {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  top: 70px; 
+  left: 292px;
 }
