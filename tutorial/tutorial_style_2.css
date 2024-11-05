@@ -1,72 +1,41 @@
-.tutorial_2 {
-  background-color: transparent;
+.tutorial {
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
 }
 
-.tutorial_2 .overlap-wrapper {
+.tutorial .overlap-wrapper {
+  background-color: #f2f2f2;
   overflow: hidden;
   width: 375px;
   height: 812px;
 }
 
-.tutorial_2 .overlap {
+.tutorial .overlap {
   position: relative;
-  width: 428px;
-  height: 926px;
+  height: 792px;
+  top: 42px;
 }
 
-.tutorial_2 .main {
+.tutorial .view {
   position: absolute;
-  width: 428px;
-  height: 926px;
-  top: 0;
+  width: 375px;
+  height: 780px;
+  top: 12px;
   left: 0;
-  background-color: #f2f2f2;
-  opacity: 0.5;
 }
 
-.tutorial_2 .user-logo-account {
-  position: absolute;
-  width: 30px;
-  height: 49px;
-  top: 855px;
-  left: 297px;
-}
-
-.tutorial_2 .user-account-wrapper {
-  position: relative;
-  height: 49px;
-  top: 18px;
-  left: -13px;
-}
-
-.tutorial_2 .user-account {
-  position: relative;
-  width: 30px;
-  height: 49px;
-  left: 4px;
-}
-
-.tutorial_2 .user-account-button {
-  position: absolute;
-  width: 30px;
-  height: 49px;
-  top: 1272px;
-  left: -392px;
-}
-
-.tutorial_2 .view {
+.tutorial .div {
   position: absolute;
   width: 335px;
   height: 184px;
-  top: 545px;
+  top: 491px;
   left: 23px;
 }
 
-.tutorial_2 .overlap-group {
+.tutorial .overlap-group {
   position: absolute;
   width: 331px;
   height: 138px;
@@ -76,7 +45,7 @@
   border-radius: 7px;
 }
 
-.tutorial_2 .text-wrapper {
+.tutorial .text-wrapper {
   position: absolute;
   width: 236px;
   height: 71px;
@@ -91,7 +60,7 @@
   line-height: normal;
 }
 
-.tutorial_2 .overlap-group-wrapper {
+.tutorial .overlap-group-wrapper {
   position: absolute;
   width: 95px;
   height: 37px;
@@ -99,7 +68,7 @@
   left: 0;
 }
 
-.tutorial_2 .div-wrapper {
+.tutorial .div-wrapper {
   position: relative;
   width: 93px;
   height: 37px;
@@ -107,30 +76,30 @@
   border-radius: 16px;
 }
 
-.tutorial_2 .div {
+.tutorial .text-wrapper-2 {
   width: 71px;
   height: 20px;
   top: 9px;
   left: 10px;
   color: #ffffff;
   font-size: 14px;
-  text-align: center;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   font-family: "Manrope-Bold", Helvetica;
   font-weight: 700;
+  text-align: center;
 }
 
-.tutorial_2 .view-2 {
+.tutorial .view-2 {
   position: absolute;
   width: 334px;
   height: 217px;
-  top: 312px;
+  top: 258px;
   left: 23px;
 }
 
-.tutorial_2 .overlap-group-wrapper-2 {
+.tutorial .overlap-group-wrapper-2 {
   position: absolute;
   width: 94px;
   height: 37px;
@@ -138,7 +107,7 @@
   left: 0;
 }
 
-.tutorial_2 .overlap-group-2 {
+.tutorial .overlap-group-2 {
   position: relative;
   width: 92px;
   height: 37px;
@@ -146,7 +115,7 @@
   border-radius: 16px;
 }
 
-.tutorial_2 .div-2 {
+.tutorial .div-2 {
   position: absolute;
   width: 332px;
   height: 171px;
@@ -156,7 +125,7 @@
   border-radius: 7px;
 }
 
-.tutorial_2 .element {
+.tutorial .element {
   position: absolute;
   width: 292px;
   height: 68px;
@@ -164,7 +133,7 @@
   left: 14px;
 }
 
-.tutorial_2 .view-3 {
+.tutorial .view-3 {
   position: absolute;
   width: 292px;
   height: 47px;
@@ -172,7 +141,7 @@
   left: 0;
 }
 
-.tutorial_2 .image {
+.tutorial .image {
   position: absolute;
   width: 47px;
   height: 49px;
@@ -180,7 +149,7 @@
   left: -1px;
 }
 
-.tutorial_2 .img {
+.tutorial .img {
   position: absolute;
   width: 47px;
   height: 49px;
@@ -188,7 +157,7 @@
   left: 246px;
 }
 
-.tutorial_2 .image-2 {
+.tutorial .image-2 {
   position: absolute;
   width: 47px;
   height: 47px;
@@ -197,7 +166,7 @@
   object-fit: cover;
 }
 
-.tutorial_2 .image-3 {
+.tutorial .image-3 {
   position: absolute;
   width: 45px;
   height: 45px;
@@ -206,7 +175,7 @@
   object-fit: cover;
 }
 
-.tutorial_2 .view-4 {
+.tutorial .view-4 {
   position: absolute;
   width: 287px;
   height: 8px;
@@ -214,71 +183,71 @@
   left: 6px;
 }
 
-.tutorial_2 .text-wrapper-2 {
+.tutorial .text-wrapper-3 {
   width: 33px;
   height: 8px;
   top: 0;
   left: 81px;
   color: #000000;
   font-size: 14px;
-  text-align: center;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
   position: absolute;
   font-family: "Manrope-Bold", Helvetica;
   font-weight: 700;
+  text-align: center;
 }
 
-.tutorial_2 .text-wrapper-3 {
+.tutorial .text-wrapper-4 {
   width: 33px;
   height: 8px;
   top: 0;
   left: 0;
   color: #000000;
   font-size: 14px;
-  text-align: center;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
   position: absolute;
   font-family: "Manrope-Bold", Helvetica;
   font-weight: 700;
+  text-align: center;
 }
 
-.tutorial_2 .text-wrapper-4 {
+.tutorial .text-wrapper-5 {
   width: 33px;
   height: 8px;
   top: 0;
   left: 164px;
   color: #000000;
   font-size: 14px;
-  text-align: center;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
   position: absolute;
   font-family: "Manrope-Bold", Helvetica;
   font-weight: 700;
+  text-align: center;
 }
 
-.tutorial_2 .text-wrapper-5 {
+.tutorial .text-wrapper-6 {
   width: 33px;
   height: 8px;
   top: 0;
   left: 246px;
   color: #000000;
   font-size: 14px;
-  text-align: center;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
   position: absolute;
   font-family: "Manrope-Bold", Helvetica;
   font-weight: 700;
+  text-align: center;
 }
 
-.tutorial_2 .element-2 {
+.tutorial .element-2 {
   position: absolute;
   width: 292px;
   height: 64px;
@@ -286,7 +255,7 @@
   left: 16px;
 }
 
-.tutorial_2 .view-5 {
+.tutorial .view-5 {
   position: absolute;
   width: 287px;
   height: 8px;
@@ -294,7 +263,7 @@
   left: 4px;
 }
 
-.tutorial_2 .image-4 {
+.tutorial .image-4 {
   position: absolute;
   width: 47px;
   height: 47px;
@@ -303,7 +272,7 @@
   object-fit: cover;
 }
 
-.tutorial_2 .image-5 {
+.tutorial .image-5 {
   position: absolute;
   width: 47px;
   height: 47px;
@@ -312,7 +281,7 @@
   object-fit: cover;
 }
 
-.tutorial_2 .image-6 {
+.tutorial .image-6 {
   position: absolute;
   width: 47px;
   height: 47px;
@@ -321,7 +290,7 @@
   object-fit: cover;
 }
 
-.tutorial_2 .image-7 {
+.tutorial .image-7 {
   position: absolute;
   width: 47px;
   height: 47px;
@@ -330,15 +299,15 @@
   object-fit: cover;
 }
 
-.tutorial_2 .overlap-2 {
+.tutorial .overlap-2 {
   position: absolute;
   width: 373px;
   height: 39px;
-  top: 54px;
+  top: 0;
   left: 2px;
 }
 
-.tutorial_2 .view-6 {
+.tutorial .view-6 {
   position: absolute;
   width: 373px;
   height: 39px;
@@ -346,32 +315,32 @@
   left: 0;
 }
 
-.tutorial_2 .rectangle {
+.tutorial .rectangle {
+  position: absolute;
   width: 371px;
   height: 1px;
   top: 38px;
+  left: 0;
   background-color: #0000004c;
   opacity: 0.7;
-  position: absolute;
-  left: 0;
 }
 
-.tutorial_2 .text-wrapper-6 {
+.tutorial .text-wrapper-7 {
   width: 177px;
   top: 0;
   left: 101px;
   color: #000000;
   font-size: 24px;
-  text-align: center;
   letter-spacing: 0.10px;
   line-height: 38.4px;
   white-space: nowrap;
   position: absolute;
   font-family: "Manrope-Bold", Helvetica;
   font-weight: 700;
+  text-align: center;
 }
 
-.tutorial_2 .image-8 {
+.tutorial .image-8 {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -380,15 +349,15 @@
   object-fit: cover;
 }
 
-.tutorial_2 .view-7 {
+.tutorial .view-7 {
   position: absolute;
   width: 377px;
   height: 75px;
-  top: 759px;
+  top: 705px;
   left: 0;
 }
 
-.tutorial_2 .overlap-3 {
+.tutorial .overlap-3 {
   position: relative;
   width: 375px;
   height: 75px;
@@ -398,41 +367,33 @@
   border-color: #000000;
 }
 
-.tutorial_2 .text-wrapper-7 {
+.tutorial .text-wrapper-8 {
   width: 203px;
   height: 14px;
   top: 16px;
   left: 83px;
   color: #ffffff;
   font-size: 35px;
-  text-align: center;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
   position: absolute;
   font-family: "Manrope-Bold", Helvetica;
   font-weight: 700;
+  text-align: center;
 }
 
-.tutorial_2 .view-8 {
-  position: absolute;
-  width: 332px;
-  height: 184px;
-  top: 115px;
-  left: 24px;
-}
-
-.tutorial_2 .overlap-4 {
+.tutorial .overlap-4 {
   position: absolute;
   width: 332px;
   height: 138px;
-  top: 46px;
-  left: 0;
+  top: 107px;
+  left: 24px;
   background-color: #ffffff;
   border-radius: 7px;
 }
 
-.tutorial_2 .navbar {
+.tutorial .navbar {
   position: absolute;
   width: 312px;
   height: 9px;
@@ -440,7 +401,7 @@
   left: 14px;
 }
 
-.tutorial_2 .text-wrapper-8 {
+.tutorial .text-wrapper-9 {
   left: 68px;
   position: absolute;
   width: 37px;
@@ -456,7 +417,7 @@
   white-space: nowrap;
 }
 
-.tutorial_2 .text-wrapper-9 {
+.tutorial .text-wrapper-10 {
   left: 0;
   position: absolute;
   width: 37px;
@@ -472,7 +433,7 @@
   white-space: nowrap;
 }
 
-.tutorial_2 .text-wrapper-10 {
+.tutorial .text-wrapper-11 {
   left: 133px;
   position: absolute;
   width: 37px;
@@ -488,7 +449,7 @@
   white-space: nowrap;
 }
 
-.tutorial_2 .text-wrapper-11 {
+.tutorial .text-wrapper-12 {
   left: 200px;
   position: absolute;
   width: 37px;
@@ -504,7 +465,7 @@
   white-space: nowrap;
 }
 
-.tutorial_2 .text-wrapper-12 {
+.tutorial .text-wrapper-13 {
   left: 266px;
   position: absolute;
   width: 37px;
@@ -520,7 +481,7 @@
   white-space: nowrap;
 }
 
-.tutorial_2 .view-9 {
+.tutorial .view-8 {
   position: absolute;
   width: 312px;
   height: 53px;
@@ -528,7 +489,7 @@
   left: 8px;
 }
 
-.tutorial_2 .image-9 {
+.tutorial .image-9 {
   position: absolute;
   width: 49px;
   height: 49px;
@@ -536,7 +497,7 @@
   left: 0;
 }
 
-.tutorial_2 .image-10 {
+.tutorial .image-10 {
   position: absolute;
   width: 49px;
   height: 49px;
@@ -544,7 +505,7 @@
   left: 65px;
 }
 
-.tutorial_2 .image-11 {
+.tutorial .image-11 {
   position: absolute;
   width: 51px;
   height: 51px;
@@ -552,7 +513,7 @@
   left: 134px;
 }
 
-.tutorial_2 .image-12 {
+.tutorial .image-12 {
   position: absolute;
   width: 49px;
   height: 49px;
@@ -560,7 +521,7 @@
   left: 197px;
 }
 
-.tutorial_2 .image-13 {
+.tutorial .image-13 {
   position: absolute;
   width: 49px;
   height: 49px;
@@ -568,107 +529,40 @@
   left: 262px;
 }
 
-.tutorial_2 .overlap-wrapper-2 {
+.tutorial .overlap-wrapper-2 {
   position: absolute;
-  width: 249px;
+  width: 94px;
+  height: 37px;
+  top: 61px;
+  left: 24px;
+}
+
+.tutorial .img-2 {
+  position: absolute;
+  width: 245px;
   height: 76px;
-  top: 68px;
+  top: 26px;
   left: 99px;
 }
 
-.tutorial_2 .overlap-5 {
-  position: relative;
-  width: 245px;
-  height: 76px;
-}
-
-.tutorial_2 .view-10 {
-  position: absolute;
-  width: 233px;
-  height: 63px;
-  top: 0;
-  left: 0;
-}
-
-.tutorial_2 .overlap-group-3 {
-  position: relative;
-  height: 60px;
-}
-
-.tutorial_2 .rectangle-2 {
-  width: 233px;
-  height: 48px;
-  top: 0;
-  background-color: #ffd8e4;
-  border-radius: 7px;
-  position: absolute;
-  left: 0;
-}
-
-.tutorial_2 .polygon {
-  position: absolute;
-  width: 18px;
-  height: 16px;
-  top: 44px;
-  left: 12px;
-}
-
-.tutorial_2 .p {
-  width: 235px;
-  height: 62px;
-  top: 0;
-  left: 10px;
-  color: #3e3939;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  font-family: "Manrope-Bold", Helvetica;
-  font-weight: 700;
-}
-
-.tutorial_2 .arrow-right-circle {
-  position: absolute;
-  width: 33px;
-  height: 33px;
-  top: 43px;
-  left: 197px;
-}
-
-.tutorial_2 .text-wrapper-13 {
-  width: 26px;
-  height: 21px;
-  top: 3px;
-  left: 11px;
-  color: #5f5f5f;
-  font-size: 10px;
-  letter-spacing: 0.70px;
-  line-height: 14px;
-  position: absolute;
-  font-family: "Manrope-Bold", Helvetica;
-  font-weight: 700;
-}
-
-.tutorial_2 .overlap-wrapper-3 {
-  position: absolute;
+.tutorial .overlap-wrapper-3 {
   width: 357px;
   height: 21px;
-  top: 42px;
   left: 10px;
+  position: absolute;
+  top: 0;
 }
 
-.tutorial_2 .overlap-6 {
+.tutorial .overlap-5 {
   position: relative;
   width: 355px;
   height: 21px;
   background-color: var(--fuschia-60);
 }
 
-.tutorial_2 .text-wrapper-14 {
-  position: absolute;
+.tutorial .text-wrapper-14 {
   width: 47px;
   height: 20px;
-  top: 0;
   left: 154px;
   font-family: "Manrope-Regular", Helvetica;
   font-weight: 400;
@@ -676,4 +570,6 @@
   font-size: 13px;
   letter-spacing: 0;
   line-height: normal;
+  position: absolute;
+  top: 0;
 }
