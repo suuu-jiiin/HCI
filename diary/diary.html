@@ -27,12 +27,16 @@
               </div>
             </div>
             <div class="overlap-group-wrapper">
-              <div class="overlap-group"><div class="text-wrapper-6">오늘의 활동</div></div>
+              <div class="overlap-group">
+                <div class="text-wrapper-6">오늘의 활동</div>
+              </div>
             </div>
           </div>
           <div class="view-3">
             <div class="overlap-group-wrapper">
-              <div class="overlap-group"><div class="text-wrapper-6">오늘의 날씨</div></div>
+              <div class="overlap-group">
+                <div class="text-wrapper-6">오늘의 날씨</div>
+              </div>
             </div>
             <div class="div-3">
               <div class="element">
@@ -66,26 +70,51 @@
             </div>
           </div>
           <div class="view-7">
-            <div class="overlap-2"><div class="text-wrapper-11">내용을 입력해주세요</div></div>
+            <div class="overlap-2">
+              <div class="text-wrapper-11">내용을 입력해주세요</div>
+            </div>
             <div class="view-8">
-              <div class="overlap-group-2"><div class="text-wrapper-6">오늘의 일기</div></div>
+              <div class="overlap-group-2">
+                <div class="text-wrapper-6">오늘의 일기</div>
+              </div>
             </div>
           </div>
         </div>
         <div class="overlap-wrapper">
           <div class="overlap-3">
-            <div class="text-wrapper-12">
-              완&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 료
-            </div>
+            <div class="text-wrapper-12">완&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 료</div>
           </div>
         </div>
         <div class="view-9">
-            <div class="text-wrapper-13">10월 1일 (화)</div>
-            <div class="rectangle-2"></div>
-            <img class="image-13" src="../icon/뒤로가기 버튼.png" />
-          </div>
+          <!-- <div class="text-wrapper-13">10월 1일 (화)</div> -->
+          <div class="text-wrapper-13"></div>
+          <img class="image-13" src="../icon/뒤로가기 버튼.png" / onclick="location.href='../main/main.html'" style="cursor: pointer;">
+          <div class="rectangle-2"></div>
         </div>
       </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const params = new URLSearchParams(window.location.search);
+        const month = params.get("month");
+        const day = params.get("day");
+        let dayOfWeek = params.get("dayofweek");
+        let dayNames = ["일", "월", "화", "수", "목", "금", "토"];
+        dayOfWeek = dayNames[dayOfWeek];
+    
+        if (month && day && dayOfWeek) {
+            const dateText = `${month}월 ${day}일 (${dayOfWeek})`;
+            const view9Element = document.querySelector(".view-9 .text-wrapper-13");
+            if (view9Element) {
+              view9Element.textContent = dateText;
+            } else {
+              console.error("text-wrapper-13 not found");
+            }
+          } else {
+            console.error("Date parameters are missing in the URL");
+          }
+        });
+    </script>
   </body>
 </html>

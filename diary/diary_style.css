@@ -8,7 +8,8 @@
   
   .div-wrapper .div {
     background-color: #f2f2f2;
-    overflow-x: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
     width: 375px;
     height: 812px;
     position: relative;
@@ -457,7 +458,7 @@
     width: 377px;
     height: 75px;
     top: 650px;
-    left:400px;
+    /* left:400px; */
   }
   
   .div-wrapper .overlap-3 {
