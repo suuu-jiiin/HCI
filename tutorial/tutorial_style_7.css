@@ -62,20 +62,13 @@
 }
 
 .tutorial_7 .symbol {
-  position: relative;
-  width: fit-content;
-  margin-top: -6.00px;
-  margin-bottom: -4.00px;
-  margin-left: -2.00px;
-  font-family: var(--subheadline-regular-font-family);
-  font-weight: var(--subheadline-regular-font-weight);
-  color: var(--system-colors-grays-white);
-  font-size: var(--subheadline-regular-font-size);
-  text-align: center;
-  letter-spacing: var(--subheadline-regular-letter-spacing);
-  line-height: var(--subheadline-regular-line-height);
-  white-space: nowrap;
-  font-style: var(--subheadline-regular-font-style);
+  position: absolute;
+  left: 8px;
+}
+
+.tutorial_7 .symbol img {
+  width: 15px;
+  height: 15px;
 }
 
 .tutorial_7 .label {
@@ -352,12 +345,12 @@
 .tutorial_7 .text-wrapper-5 {
   position: absolute;
   width: 337px;
-  top: 46px;
-  left: 27px;
+  top: 45px;
+  left: 23px;
   font-family: "Manrope-Regular", Helvetica;
   font-weight: 400;
   color: #3e3939;
-  font-size: 17px;
+  font-size: 16.5px;
   letter-spacing: 0;
   line-height: 25px;
 }
