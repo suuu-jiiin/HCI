@@ -147,10 +147,10 @@
 
 .tutorial_7 .text-wrapper-2 {
   position: absolute;
-  width: 71px;
+  width: 80px;
   height: 20px;
   top: 9px;
-  left: 10px;
+  left: 5px;
   font-family: "Manrope-Bold", Helvetica;
   font-weight: 700;
   color: #ffffff;
@@ -308,7 +308,7 @@
   position: absolute;
   width: 277px;
   height: 22px;
-  top: 24px;
+  top: 1px;
   left: 2px;
   font-family: "Manrope-Bold", Helvetica;
   font-weight: 700;
@@ -322,8 +322,8 @@
   position: absolute;
   width: 33px;
   height: 33px;
-  top: 235px;
-  left: 278px;
+  top: 225px;
+  left: 288px;
 }
 
 .tutorial_7 .view-5 {
@@ -352,7 +352,7 @@
 .tutorial_7 .text-wrapper-5 {
   position: absolute;
   width: 337px;
-  top: 66px;
+  top: 46px;
   left: 27px;
   font-family: "Manrope-Regular", Helvetica;
   font-weight: 400;
@@ -514,6 +514,7 @@
   top: 12px;
   left: 18px;
   object-fit: cover;
+  z-index: 10;
 }
 
 .tutorial_7 .view-9 {
