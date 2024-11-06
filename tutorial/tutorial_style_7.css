@@ -1,4 +1,4 @@
-.tutorial {
+.tutorial_7 {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: row;
@@ -6,14 +6,14 @@
   width: 100%;
 }
 
-.tutorial .div {
+.tutorial_7 .div {
   background-color: #f2f2f2;
   width: 375px;
   height: 812px;
   position: relative;
 }
 
-.tutorial .overlap {
+.tutorial_7 .overlap {
   position: absolute;
   width: 354px;
   height: 345px;
@@ -21,7 +21,7 @@
   left: 14px;
 }
 
-.tutorial .view {
+.tutorial_7 .view {
   position: absolute;
   width: 354px;
   height: 134px;
@@ -29,7 +29,7 @@
   left: 0;
 }
 
-.tutorial .overlap-group {
+.tutorial_7 .overlap-group {
   position: absolute;
   width: 350px;
   height: 93px;
@@ -40,7 +40,7 @@
   box-shadow: 0px 8px 20px #1d3a580d;
 }
 
-.tutorial .button-wrapper {
+.tutorial_7 .button-wrapper {
   position: absolute;
   width: 62px;
   height: 18px;
@@ -48,7 +48,7 @@
   left: 144px;
 }
 
-.tutorial .button {
+.tutorial_7 .button {
   display: flex;
   width: 62px;
   height: 18px;
@@ -61,7 +61,7 @@
   border-radius: 40px;
 }
 
-.tutorial .symbol {
+.tutorial_7 .symbol {
   position: relative;
   width: fit-content;
   margin-top: -6.00px;
@@ -78,7 +78,7 @@
   font-style: var(--subheadline-regular-font-style);
 }
 
-.tutorial .label {
+.tutorial_7 .label {
   position: relative;
   width: fit-content;
   margin-top: -6.00px;
@@ -94,7 +94,7 @@
   font-style: var(--subheadline-regular-font-style);
 }
 
-.tutorial .heart {
+.tutorial_7 .heart {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -103,7 +103,7 @@
   object-fit: cover;
 }
 
-.tutorial .text-wrapper {
+.tutorial_7 .text-wrapper {
   position: absolute;
   top: 8px;
   left: 105px;
@@ -116,7 +116,7 @@
   white-space: nowrap;
 }
 
-.tutorial .p {
+.tutorial_7 .p {
   position: absolute;
   width: 266px;
   top: 42px;
@@ -129,7 +129,7 @@
   line-height: 12.0px;
 }
 
-.tutorial .overlap-group-wrapper {
+.tutorial_7 .overlap-group-wrapper {
   position: absolute;
   width: 95px;
   height: 37px;
@@ -137,7 +137,7 @@
   left: 0;
 }
 
-.tutorial .div-wrapper {
+.tutorial_7 .div-wrapper {
   position: relative;
   width: 93px;
   height: 37px;
@@ -145,7 +145,7 @@
   border-radius: 16px;
 }
 
-.tutorial .text-wrapper-2 {
+.tutorial_7 .text-wrapper-2 {
   position: absolute;
   width: 71px;
   height: 20px;
@@ -160,7 +160,7 @@
   line-height: normal;
 }
 
-.tutorial .overlap-wrapper {
+.tutorial_7 .overlap-wrapper {
   position: absolute;
   width: 350px;
   height: 204px;
@@ -169,14 +169,14 @@
   box-shadow: var(--drop-shadow-300);
 }
 
-.tutorial .overlap-2 {
+.tutorial_7 .overlap-2 {
   position: relative;
   width: 375px;
   height: 232px;
   left: -14px;
 }
 
-.tutorial .rectangle {
+.tutorial_7 .rectangle {
   position: absolute;
   width: 375px;
   height: 199px;
@@ -184,7 +184,7 @@
   left: 0;
 }
 
-.tutorial .view-2 {
+.tutorial_7 .view-2 {
   position: absolute;
   width: 95px;
   height: 37px;
@@ -192,7 +192,7 @@
   left: 14px;
 }
 
-.tutorial .image {
+.tutorial_7 .image {
   position: absolute;
   width: 160px;
   height: 53px;
@@ -200,7 +200,7 @@
   left: 194px;
 }
 
-.tutorial .img {
+.tutorial_7 .img {
   position: absolute;
   width: 160px;
   height: 53px;
@@ -208,7 +208,7 @@
   left: 194px;
 }
 
-.tutorial .image-2 {
+.tutorial_7 .image-2 {
   position: absolute;
   width: 160px;
   height: 53px;
@@ -216,7 +216,7 @@
   left: 194px;
 }
 
-.tutorial .view-3 {
+.tutorial_7 .view-3 {
   position: absolute;
   width: 70px;
   height: 82px;
@@ -224,14 +224,14 @@
   left: 53px;
 }
 
-.tutorial .overlap-3 {
+.tutorial_7 .overlap-3 {
   width: 71px;
   height: 84px;
   position: relative;
   top: -2px;
 }
 
-.tutorial .group {
+.tutorial_7 .group {
   position: absolute;
   width: 62px;
   height: 62px;
@@ -241,7 +241,7 @@
   border-radius: 31.13px / 30.85px;
 }
 
-.tutorial .group-2 {
+.tutorial_7 .group-2 {
   position: absolute;
   width: 31px;
   height: 26px;
@@ -249,7 +249,7 @@
   left: 15px;
 }
 
-.tutorial .group-3 {
+.tutorial_7 .group-3 {
   position: absolute;
   width: 21px;
   height: 35px;
@@ -257,7 +257,7 @@
   left: 50px;
 }
 
-.tutorial .view-4 {
+.tutorial_7 .view-4 {
   position: absolute;
   width: 284px;
   height: 70px;
@@ -265,13 +265,13 @@
   left: 64px;
 }
 
-.tutorial .overlap-4 {
+.tutorial_7 .overlap-4 {
   position: relative;
   width: 280px;
   height: 66px;
 }
 
-.tutorial .rectangle-2 {
+.tutorial_7 .rectangle-2 {
   position: absolute;
   width: 280px;
   height: 56px;
@@ -282,7 +282,7 @@
   transform: rotate(179.87deg);
 }
 
-.tutorial .text-wrapper-3 {
+.tutorial_7 .text-wrapper-3 {
   position: absolute;
   width: 28px;
   height: 30px;
@@ -296,7 +296,7 @@
   line-height: 14px;
 }
 
-.tutorial .polygon {
+.tutorial_7 .polygon {
   position: absolute;
   width: 9px;
   height: 16px;
@@ -304,7 +304,7 @@
   left: 253px;
 }
 
-.tutorial .text-wrapper-4 {
+.tutorial_7 .text-wrapper-4 {
   position: absolute;
   width: 277px;
   height: 22px;
@@ -318,7 +318,7 @@
   line-height: normal;
 }
 
-.tutorial .arrow-right-circle {
+.tutorial_7 .arrow-right-circle {
   position: absolute;
   width: 33px;
   height: 33px;
@@ -326,7 +326,7 @@
   left: 278px;
 }
 
-.tutorial .view-5 {
+.tutorial_7 .view-5 {
   position: absolute;
   width: 352px;
   height: 191px;
@@ -334,14 +334,14 @@
   left: 14px;
 }
 
-.tutorial .overlap-5 {
+.tutorial_7 .overlap-5 {
   position: relative;
   width: 375px;
   height: 219px;
   left: -14px;
 }
 
-.tutorial .rectangle-3 {
+.tutorial_7 .rectangle-3 {
   position: absolute;
   width: 375px;
   height: 191px;
@@ -349,7 +349,7 @@
   left: 0;
 }
 
-.tutorial .text-wrapper-5 {
+.tutorial_7 .text-wrapper-5 {
   position: absolute;
   width: 337px;
   top: 66px;
@@ -362,7 +362,7 @@
   line-height: 25px;
 }
 
-.tutorial .rectangle-4 {
+.tutorial_7 .rectangle-4 {
   position: absolute;
   width: 350px;
   height: 1px;
@@ -372,7 +372,7 @@
   opacity: 0.7;
 }
 
-.tutorial .div-2 {
+.tutorial_7 .div-2 {
   width: 125px;
   left: 236px;
   box-shadow: 0px 8px 20px #1d3a580d;
@@ -383,7 +383,7 @@
   border-radius: 7px;
 }
 
-.tutorial .view-6 {
+.tutorial_7 .view-6 {
   position: absolute;
   width: 120px;
   height: 30px;
@@ -391,7 +391,7 @@
   left: 3px;
 }
 
-.tutorial .overlap-group-2 {
+.tutorial_7 .overlap-group-2 {
   width: 121px;
   height: 33px;
   left: -2px;
@@ -402,7 +402,7 @@
   top: -2px;
 }
 
-.tutorial .text-wrapper-6 {
+.tutorial_7 .text-wrapper-6 {
   position: absolute;
   top: 8px;
   left: 12px;
@@ -415,7 +415,7 @@
   white-space: nowrap;
 }
 
-.tutorial .view-7 {
+.tutorial_7 .view-7 {
   position: absolute;
   width: 120px;
   height: 30px;
@@ -423,7 +423,7 @@
   left: 3px;
 }
 
-.tutorial .text-wrapper-7 {
+.tutorial_7 .text-wrapper-7 {
   position: absolute;
   top: 8px;
   left: 40px;
@@ -436,7 +436,7 @@
   white-space: nowrap;
 }
 
-.tutorial .div-3 {
+.tutorial_7 .div-3 {
   width: 105px;
   left: 107px;
   box-shadow: var(--drop-shadow-100);
@@ -447,7 +447,7 @@
   border-radius: 7px;
 }
 
-.tutorial .image-3 {
+.tutorial_7 .image-3 {
   position: absolute;
   width: 40px;
   height: 41px;
@@ -455,7 +455,7 @@
   left: 5px;
 }
 
-.tutorial .image-4 {
+.tutorial_7 .image-4 {
   position: absolute;
   width: 40px;
   height: 41px;
@@ -464,7 +464,7 @@
   object-fit: cover;
 }
 
-.tutorial .image-5 {
+.tutorial_7 .image-5 {
   position: absolute;
   width: 40px;
   height: 41px;
@@ -473,7 +473,7 @@
   object-fit: cover;
 }
 
-.tutorial .view-8 {
+.tutorial_7 .view-8 {
   position: absolute;
   width: 70px;
   height: 82px;
@@ -481,7 +481,7 @@
   left: 22px;
 }
 
-.tutorial .overlap-6 {
+.tutorial_7 .overlap-6 {
   position: absolute;
   width: 373px;
   height: 46px;
@@ -489,7 +489,7 @@
   left: 0;
 }
 
-.tutorial .image-6 {
+.tutorial_7 .image-6 {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -498,7 +498,7 @@
   object-fit: cover;
 }
 
-.tutorial .image-7 {
+.tutorial_7 .image-7 {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -507,7 +507,7 @@
   object-fit: cover;
 }
 
-.tutorial .image-8 {
+.tutorial_7 .image-8 {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -516,7 +516,7 @@
   object-fit: cover;
 }
 
-.tutorial .view-9 {
+.tutorial_7 .view-9 {
   position: absolute;
   width: 373px;
   height: 39px;
@@ -524,7 +524,7 @@
   left: 0;
 }
 
-.tutorial .rectangle-5 {
+.tutorial_7 .rectangle-5 {
   position: absolute;
   width: 371px;
   height: 1px;
@@ -534,7 +534,7 @@
   opacity: 0.7;
 }
 
-.tutorial .text-wrapper-8 {
+.tutorial_7 .text-wrapper-8 {
   position: absolute;
   width: 177px;
   top: 0;
@@ -549,7 +549,7 @@
   white-space: nowrap;
 }
 
-.tutorial .overlap-wrapper-2 {
+.tutorial_7 .overlap-wrapper-2 {
   width: 357px;
   height: 21px;
   left: 10px;
@@ -557,14 +557,14 @@
   top: 0;
 }
 
-.tutorial .overlap-7 {
+.tutorial_7 .overlap-7 {
   position: relative;
   width: 355px;
   height: 21px;
   background-color: var(--fuschia-60);
 }
 
-.tutorial .text-wrapper-9 {
+.tutorial_7 .text-wrapper-9 {
   width: 47px;
   height: 20px;
   left: 154px;
@@ -578,7 +578,7 @@
   top: 0;
 }
 
-.tutorial .container-wrapper {
+.tutorial_7 .container-wrapper {
   position: absolute;
   width: 67px;
   height: 12px;
@@ -586,12 +586,12 @@
   left: 288px;
 }
 
-.tutorial .container {
+.tutorial_7 .container {
   position: relative;
   height: 12px;
 }
 
-.tutorial .battery {
+.tutorial_7 .battery {
   position: absolute;
   width: 24px;
   height: 12px;
@@ -601,7 +601,7 @@
   background-size: 100% 100%;
 }
 
-.tutorial .rectangle-6 {
+.tutorial_7 .rectangle-6 {
   position: relative;
   width: 20px;
   height: 10px;
@@ -611,7 +611,7 @@
   border-radius: 1.6px;
 }
 
-.tutorial .combined-shape {
+.tutorial_7 .combined-shape {
   position: absolute;
   width: 17px;
   height: 11px;
@@ -619,7 +619,7 @@
   left: 0;
 }
 
-.tutorial .wi-fi {
+.tutorial_7 .wi-fi {
   position: absolute;
   width: 15px;
   height: 11px;
@@ -627,7 +627,7 @@
   left: 22px;
 }
 
-.tutorial .home-indicator {
+.tutorial_7 .home-indicator {
   position: absolute;
   width: 134px;
   height: 5px;
@@ -637,7 +637,7 @@
   border-radius: 100px;
 }
 
-.tutorial .action {
+.tutorial_7 .action {
   position: absolute;
   width: 56px;
   height: 18px;
@@ -645,7 +645,7 @@
   left: 28px;
 }
 
-.tutorial .time {
+.tutorial_7 .time {
   position: absolute;
   width: 54px;
   top: 0;
