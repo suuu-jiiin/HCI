@@ -2,12 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="main_style.css" />
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
-  <body>
+  <body style="margin: 0;">
     <div class="screen">
       <div class="div">
         <div class="calendar-month">
@@ -21,34 +22,32 @@
         <img class="left_vector" id="prev" src="../icon/left_vector.png"  style="cursor: pointer;" />
         <img class="right_vector" id="next" src="../icon/right_vector.png" style="cursor: pointer;"/>
         </div>
-        <div class="view">
-          <div class="overlap">
-            <div class="overlap-2">
-              <div class="sentiment">
-                <div class="sentiment_1">
-                <div><img class="sentiment_group" src="../icon/sentiment_1.png"/></div>
-                </div>
-                <div class="sentiment_2">
-                  <div><img class="sentiment_group" src="../icon/sentiment_2.png"/></div> 
-                </div>
-                <div class="sentiment_3">
-                    <div><img class="sentiment_group" src="../icon/sentiment_3.png"/></div> 
-                </div>
-                <div class="sentiment_4">
-                    <div><img class="sentiment_group" src="../icon/sentiment_4.png"/></div>
-                </div>
-                <div class="sentiment_5">
-                    <div><img class="sentiment_group" src="../icon/sentiment_5.png"/></div>
-                </div>
+        <div class="month_sentiment_group">
+          <div class="month_sentiment">
+            <div class="sentiment">
+              <div class="sentiment_1">
+              <div><img class="sentiment_group" src="../icon/sentiment_1.png"/></div>
               </div>
-            <div class="count_text_1">0</div>
-            <div class="count_text_2">0</div>
-            <div class="count_text_3">0</div>
-            <div class="count_text_4">0</div>
-            <div class="count_text_5">0</div>
+              <div class="sentiment_2">
+                <div><img class="sentiment_group" src="../icon/sentiment_2.png"/></div> 
+              </div>
+              <div class="sentiment_3">
+                  <div><img class="sentiment_group" src="../icon/sentiment_3.png"/></div> 
+              </div>
+              <div class="sentiment_4">
+                  <div><img class="sentiment_group" src="../icon/sentiment_4.png"/></div>
+              </div>
+              <div class="sentiment_5">
+                  <div><img class="sentiment_group" src="../icon/sentiment_5.png"/></div>
+              </div>
             </div>
-            <div class="text-wrapper-7">이달의 음표들🎵</div>
+          <div class="count_text_1">0</div>
+          <div class="count_text_2">0</div>
+          <div class="count_text_3">0</div>
+          <div class="count_text_4">0</div>
+          <div class="count_text_5">0</div>
           </div>
+          <div class="sentiment_text">이달의 음표들🎵</div>
         </div>
         <img class="music" src="../icon/music.png" onclick="location.href='../main/main.html'" style="cursor: pointer;"/>
         <div class="calendar-week">

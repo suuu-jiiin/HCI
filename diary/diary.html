@@ -2,12 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="diary_style.css" />
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
 
-  <body>
+  <body style="margin: 0;">
     <div class="div-wrapper">
       <div class="div">
         <div class="div-2">
@@ -56,19 +57,19 @@
               <div class="element">
                 <div class="view-4">
                     <label for="sunny">
-                        <input type="checkbox" name="weather" class="activity" id="sunny" value="sunny" />
+                        <input type="checkbox" name="weather" class="weather" id="sunny" value="sunny" />
                         <img class="image-5" src="../icon/맑음.png" />
                     </label>
                     <label for="흐림">
-                        <input type="checkbox" name="weather" class="activity" id="흐림" value="흐림" />
+                        <input type="checkbox" name="weather" class="weather" id="흐림" value="흐림" />
                         <img class="image-6" src="../icon/흐림.png" />
                     </label>
                     <label for="비">
-                        <input type="checkbox" name="weather" class="activity" id="비" value="비" />
+                        <input type="checkbox" name="weather" class="weather" id="비" value="비" />
                         <img class="image-7" src="../icon/비.png" />
                     </label>
                     <label for="눈">
-                        <input type="checkbox" name="weather" class="activity" id="눈" value="눈" />
+                        <input type="checkbox" name="weather" class="weather" id="눈" value="눈" />
                         <img class="image-8" src="../icon/눈.png" />
                     </label>
                   
@@ -89,19 +90,19 @@
                 </div>
                 <div class="view-4">
                     <label for="폭풍">
-                        <input type="checkbox" name="weather" class="activity" id="폭풍" value="폭풍" />
+                        <input type="checkbox" name="weather" class="weather" id="폭풍" value="폭풍" />
                         <img class="image-9" src="../icon/폭풍.png" />
                     </label>
                     <label for="바람">
-                        <input type="checkbox" name="weather" class="activity" id="바람" value="바람" />
+                        <input type="checkbox" name="weather" class="weather" id="바람" value="바람" />
                         <img class="image-10" src="../icon/바람.png" />
                     </label>
                     <label for="더움">
-                        <input type="checkbox" name="weather" class="activity" id="더움" value="더움" />
+                        <input type="checkbox" name="weather" class="weather" id="더움" value="더움" />
                         <img class="image-11" src="../icon/더움.png" />
                     </label>
                     <label for="추움">
-                        <input type="checkbox" name="weather" class="activity" id="추움" value="추움" />
+                        <input type="checkbox" name="weather" class="weather" id="추움" value="추움" />
                         <img class="image-12" src="../icon/추움.png" />
                     </label>
                 </div>
@@ -120,9 +121,9 @@
             </div>
           </div>
         </div>
-        <div class="overlap-wrapper">
-          <div class="overlap-3">
-            <div class="text-wrapper-12">완&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 료</div>
+        <div class="Done_group">
+          <div class="Done_rectangle" id="saveButton" style="cursor: pointer;">
+            <div class="Done_text">완&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 료</div>
           </div>
         </div>
         <div class="view-9">
@@ -134,6 +135,34 @@
     </div>
 
     <script>
+      const checkboxes = document.querySelectorAll('input[type="checkbox"].activity');
+
+      checkboxes.forEach((checkbox) => {
+          checkbox.addEventListener('change', () => {
+              const checkedCount = document.querySelectorAll('input[type="checkbox"].activity:checked').length;
+              if (checkedCount > 2) {
+                  checkbox.checked = false; // Uncheck the current box if the limit is exceeded
+                  alert('최대 두 개만 선택할 수 있습니다.'); // Show an alert
+              }
+          });
+      });
+
+
+      const checkboxes_weather = document.querySelectorAll('input[type="checkbox"].weather');
+
+      checkboxes_weather.forEach((checkbox) => {
+          checkbox.addEventListener('change', () => {
+              // Count how many checkboxes are currently checked
+              const checkedCount = document.querySelectorAll('input[type="checkbox"].weather:checked').length;
+          
+              // If more than 2 checkboxes are selected, uncheck the latest one and show an alert
+              if (checkedCount > 2) {
+                  checkbox.checked = false; // Uncheck the current checkbox
+                  alert('최대 두 개만 선택할 수 있습니다.'); // Show an alert
+              }
+          });
+      });
+
       document.addEventListener("DOMContentLoaded", () => {
         const params = new URLSearchParams(window.location.search);
         const month = params.get("month");
@@ -154,6 +183,48 @@
             console.error("Date parameters are missing in the URL");
           }
         });
+      
+      document.getElementById('saveButton').addEventListener('click', function() {
+        // 선택된 "오늘의  활동"
+        const selectedActivities = Array.from(document.querySelectorAll('input[type="checkbox"].activity:checked'))
+          .map((checkbox) => checkbox.value);
+        
+        // 선택된 "오늘의  날씨"
+        const selectedWeather = Array.from(document.querySelectorAll('input[type="checkbox"].weather:checked'))
+          .map((checkbox) => checkbox.value);
+      
+        // 작성된 "오늘의 일기"
+        const diaryContent = document.querySelector('.text-wrapper-11').textContent.trim();
+      
+        // Prepare data for Django
+        const data = {
+          activities: selectedActivities,
+          weather: selectedWeather,
+          diary: diaryContent,
+        };
+      
+        // Fetch 이용해서 장고에 data 옮기기
+        // '/save-diary/'는 Django의 url
+        fetch('/save-diary/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': '{{ csrf_token }}'  // POST 요청에 신뢰할 수 있는 출처에서 온 것임을 보장해주는 token
+          },
+          body: JSON.stringify(data) // data가JSON형식으로 변환되어 Django 서버로 전송
+        })
+        .then(response => response.json()) // Django에서 요청을 처리한 후 JSON 응답 보내도록 설정
+        .then(data => {
+          if (data.success) {
+            alert('Data saved successfully!');
+          } else {
+            alert('Failed to save data.');
+          }
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+      });
 
       function confirmExit() {
         swal({
@@ -181,7 +252,7 @@
         });
       }
 
-      function clearPlaceholder(element) {
+    function clearPlaceholder(element) {
         if (element.textContent === "내용을 입력해주세요") {
             element.textContent = ""; // placeholder 제거
         }
@@ -192,6 +263,7 @@
             element.textContent = "내용을 입력해주세요"; // placeholder 복원
         }
     }
+
     </script>
   </body>
 </html>
