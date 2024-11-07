@@ -142,7 +142,15 @@
               const checkedCount = document.querySelectorAll('input[type="checkbox"].activity:checked').length;
               if (checkedCount > 2) {
                   checkbox.checked = false; // Uncheck the current box if the limit is exceeded
-                  alert('최대 두 개만 선택할 수 있습니다.'); // Show an alert
+                  swal({
+                    icon: "error",
+                    content: {
+                        element: "p",
+                        attributes: {
+                            innerHTML: "최대 두 개만 선택할 수 있어요",
+                        }
+                    }
+                });
               }
           });
       });
@@ -153,12 +161,20 @@
       checkboxes_weather.forEach((checkbox) => {
           checkbox.addEventListener('change', () => {
               // Count how many checkboxes are currently checked
-              const checkedCount = document.querySelectorAll('input[type="checkbox"].weather:checked').length;
+              const checkedCount_weather = document.querySelectorAll('input[type="checkbox"].weather:checked').length;
           
               // If more than 2 checkboxes are selected, uncheck the latest one and show an alert
-              if (checkedCount > 2) {
+              if (checkedCount_weather > 2) {
                   checkbox.checked = false; // Uncheck the current checkbox
-                  alert('최대 두 개만 선택할 수 있습니다.'); // Show an alert
+                  swal({
+                    icon: "error",
+                    content: {
+                        element: "p",
+                        attributes: {
+                            innerHTML: "최대 두 개만 선택할 수 있어요",
+                        }
+                    }
+                });
               }
           });
       });

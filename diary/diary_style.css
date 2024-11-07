@@ -652,6 +652,12 @@ input[class="activity"]:checked + img {
     border: 4px solid black;
 }
 
+input[class="weather"]:hover + img,
+  input[class="weather"]:checked + img {
+      border-radius: 100%;
+      border: 4px solid black;
+  }
+
 .swal-button {
 background-color: #f2f2f2; 
 font-size: 14px;
@@ -1097,7 +1103,7 @@ font-size: 16px; /* 본문 글자 크기 */
   .div-wrapper .overlap-2 {
     position: absolute;
     width: 331px;
-    height: 412px;
+    height: 377px;
     top: 46px;
     left: 2px;
     background-color: #ffffff;
