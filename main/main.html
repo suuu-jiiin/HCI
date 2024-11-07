@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="main_style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
     <div class="screen">
@@ -206,7 +207,21 @@
                   dateCell.style.cursor = "pointer";
                   // 클릭 이벤트 추가
                   dateCell.addEventListener("click", () => {
+                    const currenDate = new Date();
+                    const selectedDate = new Date(year, month, day);
+                    if (selectedDate > currenDate) {
+                      swal({
+                        icon: "error",
+                        content: {
+                            element: "p",
+                            attributes: {
+                                innerHTML: "미래의 하루는 기록할 수 없어요! 🥹",
+                            }
+                        }
+                    });
+                    } else {
                       window.location.href = `../diary/diary.html?year=${year}&month=${month + 1}&day=${day}&dayofweek=${dayOfWeek}`;
+                    }
                   });
               }
     
