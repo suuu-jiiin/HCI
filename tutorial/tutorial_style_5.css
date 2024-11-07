@@ -49,7 +49,7 @@
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 17px;
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
@@ -448,7 +448,7 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 0;
+  top: 17%;
 }
 
 .tutorial_5 .calendar-week {
@@ -723,11 +723,12 @@
   position: relative;
   width: 282px;
   height: 64px;
-  top: 2px;
+  bottom: 225%;
+  left: 10%
 }
 
 .tutorial_5 .rectangle-2 {
-  width: 264px;
+  width: 270px;
   height: 46px;
   top: 8px;
   background-color: #ffd8e4;
@@ -761,22 +762,22 @@
 
 .tutorial_5 .p {
   position: absolute;
-  width: 230px;
+  width: 260px;
   height: 22px;
-  top: 8px;
-  left: 10px;
+  top: 12px;
+  left: 7px;
   font-family: "Manrope-Bold", Helvetica;
   font-weight: 600;
   color: #3e3939;
   font-size: 15px;
   letter-spacing: 0;
-  line-height: normal;
+  line-height: revert;
 }
 
 .tutorial_5 .arrow-right-circle {
   position: absolute;
   width: 33px;
   height: 33px;
-  top: 31px;
-  left: 249px;
+  top: 44px;
+  left: 233px;
 }

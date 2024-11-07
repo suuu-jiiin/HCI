@@ -176,27 +176,26 @@
   }
 
   .tutorial .tutorial_rectangle {
-    width: 370px;
-    height: 37px;
-    background-color: var(--fuschia-60);
     position: relative;
-    top:0;
-    left:0;
+    width: 355px;
+    height: 21px;
+    background-color: #FCDDEC;
+    top: 197%;
+    left: 3%;
   }
 
   .tutorial .tutorial_text {
-    position: absolute;
-    width: 327px;
-    height: 35px;
-    left: 12.5px;
+    width: 47px;
+    height: 20px;
+    left: 154px;
     font-family: "Manrope-Regular", Helvetica;
     font-weight: 400;
     color: #000000;
-    font-size: 27px;
-    text-align: center;
+    font-size: 13px;
     letter-spacing: 0;
     line-height: normal;
-    top: 0;
+    position: absolute;
+    top: 17%;
   }
 
   .tutorial .count_text_1 {
