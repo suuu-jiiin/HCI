@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="diary_style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
+
   <body>
     <div class="div-wrapper">
       <div class="div">
@@ -112,7 +114,8 @@
           </div>
           <div class="view-7">
             <div class="overlap-2">
-              <div class="text-wrapper-11">내용을 입력해주세요</div>
+              <div class="text-wrapper-11" contenteditable="true" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)">
+                내용 입력해주세요</div>
             </div>
             <div class="view-8">
               <div class="overlap-group-2">
@@ -127,9 +130,8 @@
           </div>
         </div>
         <div class="view-9">
-          <!-- <div class="text-wrapper-13">10월 1일 (화)</div> -->
           <div class="text-wrapper-13"></div>
-          <img class="image-13" src="../icon/뒤로가기 버튼.png" onclick="location.href='../main/main.html?year=' + new URLSearchParams(window.location.search).get('year')  + '&month=' + new URLSearchParams(window.location.search).get('month') + '&day=' + new URLSearchParams(window.location.search).get('day')" style="cursor: pointer;" />
+          <img class="image-13" src="../icon/뒤로가기 버튼.png" style="cursor: pointer;" onclick="confirmExit()" />
           <div class="rectangle-2"></div>
         </div>
       </div>
@@ -156,6 +158,44 @@
             console.error("Date parameters are missing in the URL");
           }
         });
+
+      function confirmExit() {
+        swal({
+            title: "편집한 내용이 저장되지 않았어요.",
+            text: "정말 나가시는 거예요? 🥹",
+            icon: "warning",
+            buttons: {
+                cancel: "취소",
+                confirm: {
+                    text: "확인",
+                    value: true,
+                    visible: true,
+                    className: "btn-danger",
+                    closeModal: true
+                }
+            }
+        }).then((isConfirm) => {
+            if (isConfirm) {
+                const params = new URLSearchParams(window.location.search);
+                const year = params.get('year');
+                const month = params.get('month');
+                const day = params.get('day');
+                window.location.href = `../main/main.html?year=${year}&month=${month}&day=${day}`;
+            }
+        });
+      }
+
+      function clearPlaceholder(element) {
+        if (element.textContent === "내용을 입력해주세요") {
+            element.textContent = ""; // placeholder 제거
+        }
+    }
+    
+    function restorePlaceholder(element) {
+        if (element.textContent.trim() === "") {
+            element.textContent = "내용을 입력해주세요"; // placeholder 복원
+        }
+    }
     </script>
   </body>
 </html>

@@ -8,28 +8,30 @@
   
   .div-wrapper .div {
     background-color: #f2f2f2;
-    overflow-x: auto;
-    overflow-y: hidden;
+    /* overflow-x: auto;
+    overflow-y: hidden; */
+    overflow: hidden;
     width: 375px;
     height: 812px;
     position: relative;
   }
   
+  
   .div-wrapper .div-2 {
     display: flex;
     flex-direction: column;
     width: 390px;
-    height: 800px;
+    height: 1000px;
     align-items: flex-end;
-    gap: 50px;
-    padding: 0px 7px;
+    gap: 33px;
+    /* padding: 0; */
     position: absolute;
-    top: 123px;
+    top: 73px;
     left: -31px;
-    max-height: 759px; /*Set the maximum height as needed */
-    overflow-y: auto; /* Enables vertical scrolling */
-    overflow-x: hidden; /*Prevents horizontal scrolling */
-  }
+    max-height: 759px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
   
   .div-wrapper .view {
     position: relative;
@@ -415,7 +417,7 @@
   .div-wrapper .overlap-2 {
     position: absolute;
     width: 331px;
-    height: 261px;
+    height: 412px;
     top: 46px;
     left: 2px;
     background-color: #ffffff;
@@ -424,19 +426,21 @@
   
   .div-wrapper .text-wrapper-11 {
     position: absolute;
-    width: 236px;
-    height: 71px;
-    top: 34px;
-    left: 47px;
+    width: 314px;
+    height: 240px;
+    top: 8px;
+    left: 6.5px;
     font-family: "Manrope-Medium", Helvetica;
     font-weight: 500;
     color: #3e3939;
-    font-size: 22px;
+    font-size: 14px;
     text-align: center;
-    letter-spacing: 2.86px;
+    letter-spacing: 0.86px;
     line-height: normal;
+    padding: 5px;
+    overflow-y: auto; 
   }
-  
+
   .div-wrapper .view-8 {
     position: absolute;
     width: 95px;
@@ -454,39 +458,40 @@
   }
   
   .div-wrapper .overlap-wrapper {
-    position: fixed;
-    width: 377px;
-    height: 75px;
-    top: 650px;
-    /* left:400px; */
-  }
-  
-  .div-wrapper .overlap-3 {
-    position: relative;
-    width: 375px;
-    height: 75px;
-    background-color: #333333;
-    border-radius: 13px;
-    border: 1px solid;
-    border-color: #000000;
-  }
-  
-  .div-wrapper .text-wrapper-12 {
     position: absolute;
-    width: 203px;
-    height: 14px;
-    top: 15px;
-    left: 82px;
-    -webkit-text-stroke: 1px #000000;
-    font-family: "Manrope-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 35px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
+    width: 183px;
+    height: 65px;
+    bottom: 0%;
+    /* left: 400px; */
+}
+  
+.div-wrapper .overlap-3 {
+  position: absolute;
+  width: 358px;
+  height: 70px;
+  bottom: 106%;
+  background-color: #333333;
+  border-radius: 13px;
+  border: 1px solid;
+  border-color: #000000;
+}
+  
+.div-wrapper .text-wrapper-12 {
+  position: absolute;
+  width: 203px;
+  height: 14px;
+  top: 16%;
+  left: 22%;
+  /* -webkit-text-stroke: 1px #000000; */
+  font-family: "Manrope-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
   
   .div-wrapper .frame {
     display: flex;
@@ -594,8 +599,8 @@
     flex: 0 0 auto;
     backdrop-filter: blur(4px) brightness(100%);
     -webkit-backdrop-filter: blur(4px) brightness(100%);
-    top: 70px;
-  }
+    top: 24px;
+}
   
   .div-wrapper .text-wrapper-13 {
     position: relative;
@@ -649,9 +654,29 @@
     cursor: pointer;
   }
   
-    input[class="activity"]:hover + img,
-    input[class="activity"]:checked + img {
-        border-radius: 100%;
-        border: 4px solid black;
-    }
+  input[class="activity"]:hover + img,
+  input[class="activity"]:checked + img {
+      border-radius: 100%;
+      border: 4px solid black;
+  }
   
+  .swal-button {
+	background-color: #f2f2f2; 
+	font-size: 14px;
+  color: #333;
+}
+
+.swal-modal {
+  background-color: #FCDDEC !important; /* 원하는 배경색으로 변경 */
+}
+
+/* 텍스트 색상이나 크기를 조정하고 싶다면 */
+.swal-title {
+  color: #333; /* 텍스트 색상 */
+  font-size: 20px; /* 제목 글자 크기 */
+}
+
+.swal-text {
+  color: #555; /* 본문 텍스트 색상 */
+  font-size: 16px; /* 본문 글자 크기 */
+} 
