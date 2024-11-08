@@ -94,11 +94,11 @@
         
         // 페이지 이동 기능 추가
         document.querySelector('.modify').addEventListener('click', () => {
-            window.location.href = '/modify-page'; // modify가 이동할 URL
+            window.location.href = '../diary/diary.htm'; // modify가 이동할 URL
         });
 
         document.querySelector('.back').addEventListener('click', () => {
-            window.location.href = '/back-page'; // back이 이동할 URL
+            window.location.href = '../main/main.html'; // back이 이동할 URL
         });
 
         document.querySelector('.trash').addEventListener('click', () => {
@@ -111,7 +111,7 @@
             }).then((willDelete) => {
                 if (willDelete) {
             // 삭제 로직 실행
-                window.location.href = '/redirect-page'
+                window.location.href = '../main/main.html'
                 } 
             });
         });
