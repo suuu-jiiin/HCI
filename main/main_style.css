@@ -270,7 +270,7 @@
     background-color: #ffffff;
   }
   
-  .screen .div-wrapper-2 {
+  .screen .day_group {
     position: relative;
     flex: 1;
     flex-grow: 1;
@@ -278,7 +278,7 @@
     background-color: #ffffff;
   }
   
-  .screen .text-wrapper-8 {
+  .screen .day_text {
     position: absolute;
     height: 15px;
     top: 3px;
@@ -456,7 +456,7 @@
     border-radius: 4px;
   }
   
-  .screen .text-wrapper-11 {
+  .screen .tutorial_text {
     position: absolute;
     width: 58px;
     height: 44px;
@@ -793,7 +793,7 @@
     background-color: #ffffff;
   }
   
-  .screen .div-wrapper-2 {
+  .screen .day_group {
     position: relative;
     flex: 1;
     flex-grow: 1;
@@ -801,7 +801,7 @@
     background-color: #ffffff;
   }
   
-  .screen .text-wrapper-8 {
+  .screen .day_text {
     position: absolute;
     height: 15px;
     top: 3px;
@@ -979,7 +979,7 @@
     border-radius: 4px;
   }
   
-  .screen .text-wrapper-11 {
+  .screen .tutorial_text {
     position: absolute;
     width: 58px;
     height: 44px;
