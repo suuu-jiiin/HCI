@@ -33,7 +33,7 @@
   overflow-x: hidden;
 }
 
-.div-wrapper .view {
+.div-wrapper .activity_div {
   position: relative;
   width: 332px;
   height: 183.3px;
@@ -47,153 +47,45 @@
   left: 0;
   background-color: #ffffff;
   border-radius: 7px;
+  display: flex;
+  column-gap: 11%; 
 }
 
-.div-wrapper .activity_text {
-  position: absolute;
-  width: 312px;
-  height: 9px;
-  top: 100px;
-  left: 14px;
+.div-wrapper .activity_item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  top: 24%;
+  left: 3%;
 }
 
-.div-wrapper .text-wrapper {
-  left: 68px;
-  position: absolute;
-  width: 37px;
-  height: 9px;
-  top: 0;
-  font-family: "Manrope-Bold", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+.div-wrapper .activity_item label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.div-wrapper .text-wrapper-2 {
-  left: 0;
-  position: absolute;
-  width: 37px;
-  height: 9px;
-  top: 0;
-  font-family: "Manrope-Bold", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+.div-wrapper .activity_item input {
+  display: none; /* 체크박스를 숨깁니다. */
 }
 
-.div-wrapper .text-wrapper-3 {
-  left: 133px;
-  position: absolute;
-  width: 37px;
-  height: 9px;
-  top: 0;
-  font-family: "Manrope-Bold", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.div-wrapper .text-wrapper-4 {
-  left: 200px;
-  position: absolute;
-  width: 37px;
-  height: 9px;
-  top: 0;
-  font-family: "Manrope-Bold", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.div-wrapper .text-wrapper-5 {
-  left: 266px;
-  position: absolute;
-  width: 37px;
-  height: 9px;
-  top: 0;
-  font-family: "Manrope-Bold", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.div-wrapper .activity_icon {
-  position: absolute;
-  width: 312px;
-  height: 53px;
-  top: 28px;
-  left: 8px;
-}
-
-.div-wrapper .rest_img {
-  position: absolute;
+.div-wrapper .rest_img, .div-wrapper .health_img, .div-wrapper .study_img, .div-wrapper .work_img, .div-wrapper .shopping_img {
   width: 49px;
   height: 49px;
-  top: 0;
-  left: 0;
 }
 
-.div-wrapper .health_img {
-  position: absolute;
-  width: 49px;
-  height: 49px;
-  top: 3px;
-  left: 65px;
+.div-wrapper .rest_text, .div-wrapper .health_text, .div-wrapper .study_text, .div-wrapper .work_text, .div-wrapper .shopping_text {
+  font-family: "Manrope-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5px;
+  top: 8vh;
 }
 
-.div-wrapper .study_img {
-  position: absolute;
-  width: 51px;
-  height: 51px;
-  top: 2px;
-  left: 134px;
-}
-
-.div-wrapper .work_img {
-  position: absolute;
-  width: 49px;
-  height: 49px;
-  top: 0;
-  left: 197px;
-}
-
-.div-wrapper .shopping_img {
-  position: absolute;
-  width: 49px;
-  height: 49px;
-  top: 0;
-  left: 262px;
-}
-
-.div-wrapper .overlap-group-wrapper {
-  position: absolute;
-  width: 94px;
-  height: 37px;
-  top: 0;
-  left: 0;
-}
-
-.div-wrapper .text_rectangle {
+.div-wrapper .item_rectangle {
   position: relative;
   width: 92px;
   height: 37px;
@@ -201,7 +93,7 @@
   border-radius: 16px;
 }
 
-.div-wrapper .text-wrapper-6 {
+.div-wrapper .item_text {
   position: absolute;
   width: 80px;
   height: 20px;
@@ -216,197 +108,70 @@
   line-height: normal;
 }
 
-.div-wrapper .view-3 {
+.div-wrapper .weather_div {
   position: relative;
-  width: 333.94px;
-  height: 217.41px;
+  width: 332px;
+  height: 183.3px;
+  top: -2%;
 }
 
-.div-wrapper .div-3 {
+.div-wrapper .today_weather {
   position: absolute;
   width: 332px;
-  height: 171px;
+  height: 174px;
   top: 47px;
-  left: 2px;
+  left: 0;
   background-color: #ffffff;
   border-radius: 7px;
 }
 
-.div-wrapper .element {
-  position: absolute;
-  width: 292px;
-  height: 68px;
-  top: 11px;
-  left: 14px;
+.div-wrapper .weather_row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+  margin-top: 10px;
+  width: 99%;
+  height: 43%;
 }
 
-.div-wrapper .view-4 {
-  position: absolute;
-  width: 292px;
-  height: 47px;
-  top: 0;
-  left: 0;
+.div-wrapper .weather_item {
+  text-align: center;
+  width: 23%; /* Each item occupies 1/4 of the row */
 }
 
-.div-wrapper .image-5 {
-  position: absolute;
-  width: 45px;
-  height: 47px;
-  top: 0;
-  left: 0;
+.div-wrapper .weather_item input {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
 }
 
-.div-wrapper .image-6 {
-  position: absolute;
-  width: 45px;
-  height: 47px;
-  top: 0;
-  left: 246px;
-}
-
-.div-wrapper .image-7 {
-  position: absolute;
-  width: 47px;
-  height: 47px;
-  top: 1px;
-  left: 82px;
-  object-fit: cover;
-}
-
-.div-wrapper .image-8 {
-  position: absolute;
+.div-wrapper .weather_item img {
   width: 45px;
   height: 45px;
-  top: 2px;
-  left: 165px;
   object-fit: cover;
 }
 
-.div-wrapper .view-5 {
-  position: absolute;
-  width: 287px;
-  height: 8px;
-  top: 60px;
-  left: 6px;
-}
-
-.div-wrapper .text-wrapper-7 {
-  position: absolute;
-  width: 33px;
-  height: 8px;
-  top: 0;
-  left: 81px;
+.div-wrapper .weather_text {
   font-family: "Manrope-Bold", Helvetica;
   font-weight: 700;
   color: #000000;
   font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+  margin-top: 8px;
 }
 
-.div-wrapper .text-wrapper-8 {
-  position: absolute;
-  width: 33px;
-  height: 8px;
-  top: 0;
-  left: 0;
-  font-family: "Manrope-Bold", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+.div-wrapper .sunny_img, .div-wrapper .cloudy_img, .div-wrapper .rainy_img, .div-wrapper .snow_img,
+.div-wrapper .stormy_img, .div-wrapper .windy_img, .div-wrapper .hot_img, .div-wrapper .cold_img {
+  display: block;
+  margin: 0 auto;
 }
 
-.div-wrapper .text-wrapper-9 {
-  left: 164px;
-  position: absolute;
-  width: 33px;
-  height: 8px;
-  top: 0;
-  font-family: "Manrope-Bold", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+.div-wrapper .weather_text {
+  margin-top: 5px;  /* Space between image and text */
 }
 
-.div-wrapper .text-wrapper-10 {
-  left: 246px;
-  position: absolute;
-  width: 33px;
-  height: 8px;
-  top: 0;
-  font-family: "Manrope-Bold", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
 
-.div-wrapper .element-2 {
-  position: absolute;
-  width: 292px;
-  height: 64px;
-  top: 92px;
-  left: 16px;
-}
-
-.div-wrapper .view-6 {
-  position: absolute;
-  width: 287px;
-  height: 8px;
-  top: 56px;
-  left: 4px;
-}
-
-.div-wrapper .image-9 {
-  position: absolute;
-  width: 47px;
-  height: 47px;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
-
-.div-wrapper .image-10 {
-  position: absolute;
-  width: 47px;
-  height: 47px;
-  top: 0;
-  left: 79px;
-  object-fit: cover;
-}
-
-.div-wrapper .image-11 {
-  position: absolute;
-  width: 47px;
-  height: 47px;
-  top: 0;
-  left: 165px;
-  object-fit: cover;
-}
-
-.div-wrapper .image-12 {
-  position: absolute;
-  width: 47px;
-  height: 47px;
-  top: 0;
-  left: 245px;
-  object-fit: cover;
-}
-
-.div-wrapper .view-7 {
+.div-wrapper .diary_div {
   position: relative;
   width: 334.61px;
   height: 307.29px;
@@ -414,7 +179,7 @@
   margin-right: -2.00px;
 }
 
-.div-wrapper .overlap-2 {
+.div-wrapper .today_diary {
   position: absolute;
   width: 331px;
   height: 412px;
@@ -424,12 +189,12 @@
   border-radius: 7px;
 }
 
-.div-wrapper .text-wrapper-11 {
+.div-wrapper .diary_text {
   position: absolute;
-  width: 314px;
-  height: 240px;
+  width: 95%;
+  height: 70%;
   top: 8px;
-  left: 6.5px;
+  left: 2.5px;
   font-family: "Manrope-Medium", Helvetica;
   font-weight: 500;
   color: #3e3939;
@@ -439,14 +204,6 @@
   line-height: normal;
   padding: 5px;
   overflow-y: auto; 
-}
-
-.div-wrapper .view-8 {
-  position: absolute;
-  width: 95px;
-  height: 37px;
-  top: 0;
-  left: 0;
 }
 
 .div-wrapper .Done_group {
@@ -461,7 +218,7 @@
 position: absolute;
 width: 358px;
 height: 70px;
-bottom: 106%;
+bottom: 0;
 background-color: #333333;
 border-radius: 13px;
 border: 1px solid;
@@ -581,7 +338,7 @@ white-space: nowrap;
   left: 22px;
 }
 
-.div-wrapper .view-9 {
+.div-wrapper .upper_icon {
   display: flex;
   flex-direction: column;
   width: 370.72px;
@@ -594,7 +351,7 @@ white-space: nowrap;
   top: 24px;
 }
 
-.div-wrapper .text-wrapper-13 {
+.div-wrapper .diary_date {
   position: relative;
   align-self: stretch;
   height: 25.99px;
@@ -609,7 +366,7 @@ white-space: nowrap;
   white-space: nowrap;
 }
 
-.div-wrapper .rectangle-2 {
+.div-wrapper .line {
   position: relative;
   align-self: stretch;
   width: 100%;
@@ -619,7 +376,7 @@ white-space: nowrap;
   opacity: 0.7;
 }
 
-.div-wrapper .image-13 {
+.div-wrapper .back_img {
   position: absolute;
   width: 25px;
   height: 25px;
@@ -711,165 +468,66 @@ font-size: 16px; /* 본문 글자 크기 */
     gap: 41px;
     /* padding: 5px; */
     position: absolute;
-    top: 14%;
-    left: 0%;
-    max-height: 759px;
+    top: 14vh;
+    left: 0vw;
+    max-height: 78%;
     overflow-y: auto;
     overflow-x: hidden;
   }
 
   
-  .div-wrapper .view {
+  .div-wrapper .activity_div {
     position: relative;
-    width: 332px;
-    height: 183.3px;
+    width: 95vw;
+    height: 21vh;
   }
   
   .div-wrapper .today_activity {
     position: absolute;
-    width: 332px;
-    height: 138px;
+    width: 100%;
+    height: 69%;
     top: 45px;
     left: 0;
     background-color: #ffffff;
     border-radius: 7px;
+    display: flex;
+    column-gap: 2vw;
   }
   
-  .div-wrapper .activity_text {
-    position: absolute;
-    width: 312px;
-    height: 9px;
-    top: 100px;
-    left: 14px;
+  .div-wrapper .activity_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    top: 20%;
+    left: 0%;
   }
   
-  .div-wrapper .text-wrapper {
-    left: 68px;
-    position: absolute;
-    width: 37px;
-    height: 9px;
-    top: 0;
-    font-family: "Manrope-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
+  .div-wrapper .activity_item label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
-  .div-wrapper .text-wrapper-2 {
-    left: 0;
-    position: absolute;
-    width: 37px;
-    height: 9px;
-    top: 0;
-    font-family: "Manrope-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
+  .div-wrapper .activity_item input {
+    display: none; /* 체크박스를 숨깁니다. */
   }
   
-  .div-wrapper .text-wrapper-3 {
-    left: 133px;
-    position: absolute;
-    width: 37px;
-    height: 9px;
-    top: 0;
-    font-family: "Manrope-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .div-wrapper .text-wrapper-4 {
-    left: 200px;
-    position: absolute;
-    width: 37px;
-    height: 9px;
-    top: 0;
-    font-family: "Manrope-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .div-wrapper .text-wrapper-5 {
-    left: 266px;
-    position: absolute;
-    width: 37px;
-    height: 9px;
-    top: 0;
-    font-family: "Manrope-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .div-wrapper .activity_icon {
-    position: absolute;
-    width: 312px;
-    height: 53px;
-    top: 28px;
-    left: 8px;
-  }
-  
-  .div-wrapper .rest_img {
-    position: absolute;
+  .div-wrapper .rest_img, .div-wrapper .health_img, .div-wrapper .study_img, .div-wrapper .work_img, .div-wrapper .shopping_img {
     width: 49px;
     height: 49px;
-    top: 0;
-    left: 0;
   }
   
-  .div-wrapper .health_img {
-    position: absolute;
-    width: 49px;
-    height: 49px;
-    top: 3px;
-    left: 65px;
+  .div-wrapper .rest_text, .div-wrapper .health_text, .div-wrapper .study_text, .div-wrapper .work_text, .div-wrapper .shopping_text {
+    font-family: "Manrope-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+    top: 8vh;
   }
   
-  .div-wrapper .study_img {
-    position: absolute;
-    width: 51px;
-    height: 51px;
-    top: 2px;
-    left: 134px;
-  }
-  
-  .div-wrapper .work_img {
-    position: absolute;
-    width: 49px;
-    height: 49px;
-    top: 0;
-    left: 197px;
-  }
-  
-  .div-wrapper .shopping_img {
-    position: absolute;
-    width: 49px;
-    height: 49px;
-    top: 0;
-    left: 262px;
-  }
   
   .div-wrapper .overlap-group-wrapper {
     position: absolute;
@@ -879,7 +537,7 @@ font-size: 16px; /* 본문 글자 크기 */
     left: 0;
   }
   
-  .div-wrapper .text_rectangle {
+  .div-wrapper .item_rectangle {
     position: relative;
     width: 92px;
     height: 37px;
@@ -887,7 +545,7 @@ font-size: 16px; /* 본문 글자 크기 */
     border-radius: 16px;
   }
   
-  .div-wrapper .text-wrapper-6 {
+  .div-wrapper .item_text {
     position: absolute;
     width: 80px;
     height: 20px;
@@ -902,221 +560,93 @@ font-size: 16px; /* 본문 글자 크기 */
     line-height: normal;
   }
   
-  .div-wrapper .view-3 {
+  .div-wrapper .weather_div {
     position: relative;
-    width: 333.94px;
-    height: 217.41px;
+    width: 95vw;
+    height: 21vh;
+    top: -5%;
   }
   
-  .div-wrapper .div-3 {
+  .div-wrapper .today_weather {
     position: absolute;
-    width: 332px;
-    height: 171px;
+    width: 100%;
+    height: 109%;
     top: 47px;
-    left: 2px;
+    left: 0;
     background-color: #ffffff;
     border-radius: 7px;
   }
   
-  .div-wrapper .element {
-    position: absolute;
-    width: 292px;
-    height: 68px;
-    top: 11px;
-    left: 14px;
+  .div-wrapper .weather_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    margin-top: 10px;
+    width: 99%;
+    height: 43%;
   }
   
-  .div-wrapper .view-4 {
-    position: absolute;
-    width: 292px;
-    height: 47px;
-    top: 0;
-    left: 0;
+  .div-wrapper .weather_item {
+    text-align: center;
+    width: 23%; /* Each item occupies 1/4 of the row */
   }
   
-  .div-wrapper .image-5 {
-    position: absolute;
-    width: 45px;
-    height: 47px;
-    top: 0;
-    left: 0;
+  .div-wrapper .weather_item input {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
   }
   
-  .div-wrapper .image-6 {
-    position: absolute;
-    width: 45px;
-    height: 47px;
-    top: 0;
-    left: 246px;
-  }
-  
-  .div-wrapper .image-7 {
-    position: absolute;
-    width: 47px;
-    height: 47px;
-    top: 1px;
-    left: 82px;
-    object-fit: cover;
-  }
-  
-  .div-wrapper .image-8 {
-    position: absolute;
+  .div-wrapper .weather_item img {
     width: 45px;
     height: 45px;
-    top: 2px;
-    left: 165px;
     object-fit: cover;
   }
   
-  .div-wrapper .view-5 {
-    position: absolute;
-    width: 287px;
-    height: 8px;
-    top: 60px;
-    left: 6px;
-  }
-  
-  .div-wrapper .text-wrapper-7 {
-    position: absolute;
-    width: 33px;
-    height: 8px;
-    top: 0;
-    left: 81px;
+  .div-wrapper .weather_text {
     font-family: "Manrope-Bold", Helvetica;
     font-weight: 700;
     color: #000000;
     font-size: 14px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
+    margin-top: 8px;
   }
   
-  .div-wrapper .text-wrapper-8 {
-    position: absolute;
-    width: 33px;
-    height: 8px;
-    top: 0;
-    left: 0;
-    font-family: "Manrope-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
+  .div-wrapper .sunny_img, .div-wrapper .cloudy_img, .div-wrapper .rainy_img, .div-wrapper .snow_img,
+  .div-wrapper .stormy_img, .div-wrapper .windy_img, .div-wrapper .hot_img, .div-wrapper .cold_img {
+    display: block;
+    margin: 0 auto;
   }
   
-  .div-wrapper .text-wrapper-9 {
-    left: 164px;
-    position: absolute;
-    width: 33px;
-    height: 8px;
-    top: 0;
-    font-family: "Manrope-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
+  .div-wrapper .weather_text {
+    margin-top: 5px;  /* Space between image and text */
   }
   
-  .div-wrapper .text-wrapper-10 {
-    left: 246px;
-    position: absolute;
-    width: 33px;
-    height: 8px;
-    top: 0;
-    font-family: "Manrope-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
   
-  .div-wrapper .element-2 {
-    position: absolute;
-    width: 292px;
-    height: 64px;
-    top: 92px;
-    left: 16px;
-  }
-  
-  .div-wrapper .view-6 {
-    position: absolute;
-    width: 287px;
-    height: 8px;
-    top: 56px;
-    left: 4px;
-  }
-  
-  .div-wrapper .image-9 {
-    position: absolute;
-    width: 47px;
-    height: 47px;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-  }
-  
-  .div-wrapper .image-10 {
-    position: absolute;
-    width: 47px;
-    height: 47px;
-    top: 0;
-    left: 79px;
-    object-fit: cover;
-  }
-  
-  .div-wrapper .image-11 {
-    position: absolute;
-    width: 47px;
-    height: 47px;
-    top: 0;
-    left: 165px;
-    object-fit: cover;
-  }
-  
-  .div-wrapper .image-12 {
-    position: absolute;
-    width: 47px;
-    height: 47px;
-    top: 0;
-    left: 245px;
-    object-fit: cover;
-  }
-  
-  .div-wrapper .view-7 {
+  .div-wrapper .diary_div {
     position: relative;
-    width: 334.61px;
+    width: 95vw;
     height: 307.29px;
-    margin-bottom: -49.00px;
-    margin-right: -2.00px;
+    margin-right: 3px;
   }
   
-  .div-wrapper .overlap-2 {
+  .div-wrapper .today_diary {
     position: absolute;
-    width: 331px;
-    height: 377px;
+    width: 100%;
+    height: 94%;
     top: 46px;
     left: 2px;
     background-color: #ffffff;
     border-radius: 7px;
   }
   
-  .div-wrapper .text-wrapper-11 {
+  .div-wrapper .diary_text {
     position: absolute;
-    width: 314px;
-    height: 240px;
+    width: 96%;
+    height: 90%;
     top: 8px;
-    left: 6.5px;
-    font-family: "Manrope-Medium", Helvetica;
+    left: 0%;
+    font-family: "Manrope-Bold", Helvetica;
     font-weight: 500;
     color: #3e3939;
     font-size: 14px;
@@ -1124,7 +654,8 @@ font-size: 16px; /* 본문 글자 크기 */
     letter-spacing: 0.86px;
     line-height: normal;
     padding: 5px;
-    overflow-y: auto; 
+    overflow-y: auto;
+    /* border: solid;*/ 
   }
 
   .div-wrapper .view-8 {
@@ -1266,7 +797,7 @@ font-size: 16px; /* 본문 글자 크기 */
     left: 22px;
   }
   
-  .div-wrapper .view-9 {
+  .div-wrapper .upper_icon {
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -1279,7 +810,7 @@ font-size: 16px; /* 본문 글자 크기 */
     top: 7%;
 }
   
-  .div-wrapper .text-wrapper-13 {
+  .div-wrapper .diary_date {
     position: relative;
     align-self: stretch;
     height: 25.99px;
@@ -1294,7 +825,7 @@ font-size: 16px; /* 본문 글자 크기 */
     white-space: nowrap;
   }
   
-  .div-wrapper .rectangle-2 {
+  .div-wrapper .line {
     position: relative;
     align-self: stretch;
     width: 100%;
@@ -1304,7 +835,7 @@ font-size: 16px; /* 본문 글자 크기 */
     opacity: 0.7;
   }
   
-  .div-wrapper .image-13 {
+  .div-wrapper .back_img {
     position: absolute;
     width: 25px;
     height: 25px;
