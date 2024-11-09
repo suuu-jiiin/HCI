@@ -669,15 +669,15 @@
     background-color: #f2f2f2;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
     position: relative;
   }
   
   .tutorial_7 .overlap {
     position: absolute;
-    width: 354px;
-    height: 345px;
-    top: 463px;
     left: 14px;
+    width: 92vw;
+    height: 45vh;
   }
   
   .tutorial_7 .view {
@@ -690,8 +690,8 @@
   
   .tutorial_7 .overlap-group {
     position: absolute;
-    width: 350px;
-    height: 93px;
+    width: 104%;
+    height: 71%;
     top: 41px;
     left: 0;
     background-color: #ffffff;
