@@ -557,7 +557,7 @@
   
   .screen .line1 {
     position: absolute;
-    width: 371px;
+    width: 100vw;
     height: 1px;
     top: 45px;
     left: 0;
@@ -566,7 +566,7 @@
   }
   .screen .line2 {
     position: absolute;
-    width: 350px;
+    width: 100vw;
     height: 1px;
     top: 180px;
     left: 12px;
