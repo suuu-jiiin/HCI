@@ -2,35 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
-  <body>
+  <body style="margin: 0;">
     <div class="screen">
       <div class="div">
 
         <!--상단바-->
         <div class="bar">
             <div class="date">10월 1일 (화)</div>
-            <img class="modify" src="img/modify.png" />
-            <img class="trash" src="img/trash.png" />
-            <img class="back" src="img/back.png" />
+            <img class="modify" src="icon/modify.png" />
+            <img class="trash" src="icon/trash.png" />
+            <img class="back" src="icon/back.png" />
             <div class="line1"></div>
-            <div class="line2"></div>
-          </div>
+        </div>
 
         <!--Overview-->
-        <div class="summ">
+        <div class="overview-container">
+          <div class="weather_activity">
+            <div class="box">
+              <div class="weather1"></div>
+              <div class="weather2"></div>
+              <div class="activity1"></div>
+              <div class="activity2"></div>
+            </div>
+          </div>
+          <div class="summ">
             <div class="hashtags">#감정1</div>
             <div class="musics">#가수 - 노래</div>
-        </div>
-        <div class="weather_activity ">
-          <div class="weather1"></div>
-          <div class="weather2"></div>
-          <div class="activity1"></div>
-          <div class="activity2"></div>
+          </div>
+          <div class="line2"></div>
         </div>
 
         <!--일기 부분-->
@@ -64,12 +69,13 @@
         </div>
         <div class="music">
           <div class="musicbox">
-            <img id="heart" class="heart" src="img/heart-1.png" />
-            <div class="music_description">노래 설명</div>
+            <img id="heart" class="heart" src="icon/heart-1.png" />
             <div class="music_title">🎵가수 - 노래</div>
+            <div class="music_description">노래 설명</div>
+          
             <div class="PLAY">
               <div id = 'play-btn' class="PLAY-btn">
-                <img class="polygon" src="img/play.png" />
+                <img class="polygon" src="icon/play.png" />
                 <div class="text-play">PLAY</div>
               </div>
             </div>
@@ -78,43 +84,6 @@
       </div>
     </div>
 
-    <script>
-        document.getElementById('heart').addEventListener('click', function() {
-          const heartImage = this;
-          if (heartImage.src.includes('heart-1.png')) {
-            heartImage.src = 'img/heart-2.png'; // heart-2 이미지로 변경
-          } else {
-            heartImage.src = 'img/heart-1.png'; // heart-1 이미지로 되돌리기
-          }
-        });
-
-        document.getElementById('play-btn').addEventListener('click', function() {
-        window.location.href = 'https://www.youtube.com/'; // 'intent://www.youtube.com/watch?v=VIDEO_ID#Intent;package=com.google.android.youtube;scheme=https;end;'
-        });      
-        
-        // 페이지 이동 기능 추가
-        document.querySelector('.modify').addEventListener('click', () => {
-            window.location.href = '../diary/diary.htm'; // modify가 이동할 URL
-        });
-
-        document.querySelector('.back').addEventListener('click', () => {
-            window.location.href = '../main/main.html'; // back이 이동할 URL
-        });
-
-        document.querySelector('.trash').addEventListener('click', () => {
-            swal({
-                title: "이 작업은 되돌릴 수 없어요.",
-                text: "정말 삭제하시겠어요? 🥹 ",
-                icon: "warning",
-                buttons: ["취소", "삭제"],
-                dangerMode: true,
-            }).then((willDelete) => {
-                if (willDelete) {
-            // 삭제 로직 실행
-                window.location.href = '../main/main.html'
-                } 
-            });
-        });
-    </script>
+    <script src="./music_recommendation.js"></script>
   </body>
 </html>
